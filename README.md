@@ -1,4 +1,4 @@
 lean
 ====
 
-Lightweight, responsive, mobile-first, boilerplate theme for eCommerce - spend your time skinning a them, not re-skinning some other theme
+Spend your time skinning a theme, not *re-skinning* a theme — Use this lightweight, responsive, mobile-first, boilerplate theme for eCommerce

@@ -1,0 +1,67 @@
+/*!
+ * Lean Theme
+ *
+ * @author Kevin Kirchner, https://github.com/kevinkirchner
+ */
+
+
+// Core variables and mixins
+@import "variables"; // Modify this for custom colors, font-sizes, etc
+@import "mixins";
+
+// CSS Reset
+@import "reset";
+
+// Page structure
+@import "scaffolding";
+@import "layouts";
+
+// Base CSS
+@import "type"; // includes prices
+@import "forms";
+@import "tables";
+
+// Components: common
+@import "sprites";
+@import "buttons";
+@import "messages"; 
+
+// Components
+@import "navbar";
+@import "navs"; // breadcrumbs, layered navigation
+@import "toolbar";
+
+// ---------------------------------------------------------
+// Magento Pages
+// ---------------------------------------------------------
+@import "cms";
+@import "product_list";
+@import "product_view";
+@import "cart";
+@import "checkout";
+
+// ---------------------------------------------------------
+// Any plugin css could go here if your not putting it in the root js directory (which is recommended)
+// ---------------------------------------------------------
+
+// ---------------------------------------------------------
+// Responsive 
+// ---------------------------------------------------------
+@import "responsive";
+
+// ---------------------------------------------------------
+// This is a custom file for any additional misc or special elements
+// ---------------------------------------------------------
+@import "local";
+
+
+// ---------------------------------------------------------
+// Utility classes — Has to be last to override when necessary. Well... almost last
+// ---------------------------------------------------------
+@import "utilities"; 
+
+
+// ---------------------------------------------------------
+// Client may not be too keen on using sass. Add a css file for them.
+// ---------------------------------------------------------
+@import "../css/client.css";
