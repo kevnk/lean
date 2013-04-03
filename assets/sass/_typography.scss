@@ -1,0 +1,8 @@
+//_typography.scss
+
+
+html { font-size: 62.5%; }
+body { @include x-rem(font-size, $baseFontRem); @include x-rem(line-height, $baseLineRem); font-family: $baseFontFamily;}
+
+h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6 { @include x-rem(line-height, $baseLineRem*2);}
+

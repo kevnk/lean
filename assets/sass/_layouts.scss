@@ -1,1 +1,11 @@
 //_layouts.scss
+
+// Global
+.main {
+  .wrapper {
+    
+    &.col-main,
+    &.col-left,
+    &.col-right { width:100%;}
+  }
+}

@@ -1,292 +1,90 @@
 // _variables.scss 
 
+$baseFontPx: 16;
+$baseFontRem: 1.6;
+
+$baseLinePx: 24;
+$baseLineRem: 2.4;
+
+$baseFontFamily: Helvetica, Arial, sans-serif;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // COLORS
 // -------------------------
-$textColor: #444 !default; // Used for colorMedium, variations of textColorLight and textColorDark, baseColor, altLinkColor
-$headingColor: 	#222 !default; // Used for baseHeadingColor
-$color1: 	#b06a30 !default; // Used for linkColor, bgColor
-$color2: 	#999 !default;
-$color3: 	#000 !default;
-$green:		#009B0C; // Used for success alerts
-$yellow:	#FCE008; // Used for notice alerts
-$red: 		#FC0; // Used for error alerts
-
-
-$textColorLight:	lighten($textColor, 15%) !default;
-$textColorMedium:	$textColor !default;
-$textColorDark:		darken($textColor, 15%) !default;
 
 // Background Colors: for general elements (e.g. body, page, block)
-$baseBgColor: 		#fff !default;
-$baseBg:			$baseBgColor; // If you have repeating bg images, this is where you set that style
-$baseBgColorAccent:	darken($baseBgColor, 5%) !default;
-$baseBorderColor: 	darken($baseBgColor, 20%) !default;
 
 // Background Colors: for custom elements (e.g. checkout steps, headings)
-$bgColor: 			$color1 !default;
-$bgColorAccent: 	darken($bgColor, 10%) !default;
 
 // LINKS
 // -------------------------
-$linkColor:					$color1 !default;
-$linkColorHover:			lighten($linkColor, 15%) !default;
-$linkDecoration:			underline !default;
-$linkDecorationHover:		none !default;
-$altLinkColor:				$textColor !default;
-$altLinkColorHover:			lighten($altLinkColor, 15%) !default;
-$altLinkDecoration:			underline !default;
-$altLinkDecorationHover:	none !default;
 
 
 // TYPOGRAPHY
 // -------------------------
-$fontFamily:	sans-serif !default; // Used for baseFontFamily
-$altFontFamily:	serif !default; // Used for baseHeadingFontFamily, tableHeadingFontFamily, altFormFieldFontFamily
 
-$sanSerifFontFamily: $fontFamily;
-$serifFontFamily: $altFontFamily;
+
 /*
 // Awesome Font-Stacks
-
 */
 
-$baseFontFamily:	$fontFamily !default;
-$baseFontWeight:	normal !default;
-$baseFontSize: 		12px !default; // Used for h6HeaderFontSize
-$baseLineHeight: 	18px !default; // Used for baseHeadingMorginBottom (and all headings)
-$baseColor:			$textColor !default;
-
-// Heading Text
-$baseHeadingFontFamily:		$altFontFamily !default; // Used for tableHeadings, navbar
-$baseHeadingFontWeight:		bold !default; // Used for tableHeadings, navbar
-$baseHeadingFontSize:		18px !default; // Used for tableHeadings, navbar
-$baseHeadingLineHeight:		1.5em !default; // Used for tableHeadings, navbar
-$baseHeadingColor:			$headingColor !default; // Used for tableHeadings, navbar
-$baseHeadingPaddingBottom:	0 !default;
-$baseHeadingMarginBottom:	$baseLineHeight !default;
-
-$h1FontFamily:				$baseHeadingFontFamily !default;
-$h1FontWeight:				$baseHeadingFontWeight !default;
-$h1FontSize:				30px !default;
-$h1LineHeight:				$baseLineHeight !default;
-$h1Color:					$baseHeadingColor !default;
-$h1HeadingPaddingBottom:	$baseHeadingPaddingBottom !default;
-$h1HeadingMarginBottom:		$baseHeadingMarginBottom !default;
-
-$h2FontFamily:				$baseHeadingFontFamily !default;
-$h2FontWeight:				$baseHeadingFontWeight !default;
-$h2FontSize:				22px !default;
-$h2LineHeight:				$baseLineHeight !default;
-$h2Color:					$baseHeadingColor !default;
-$h2HeadingPaddingBottom:	$baseHeadingPaddingBottom !default;
-$h2HeadingMarginBottom:		$baseHeadingMarginBottom !default;
-
-$h3FontFamily:				$baseHeadingFontFamily !default;
-$h3FontWeight:				$baseHeadingFontWeight !default;
-$h3FontSize:				$baseHeadingFontSize !default; // 18px by default
-$h3LineHeight:				$baseHeadingLineHeight !default;
-$h3Color:					$baseHeadingColor !default;
-$h3HeadingPaddingBottom:	$baseHeadingPaddingBottom !default;
-$h3HeadingMarginBottom:		$baseHeadingMarginBottom !default;
-
-$h4FontFamily:				$baseHeadingFontFamily !default;
-$h4FontWeight:				$baseHeadingFontWeight !default;
-$h4FontSize:				16px !default;
-$h4LineHeight:				$baseLineHeight !default;
-$h4Color:					$baseHeadingColor !default;
-$h4HeadingPaddingBottom:	$baseHeadingPaddingBottom !default;
-$h4HeadingMarginBottom:		$baseHeadingMarginBottom !default;
-
-$h5FontFamily:				$baseHeadingFontFamily !default;
-$h5FontWeight:				$baseHeadingFontWeight !default;
-$h5FontSize:				14px !default;
-$h5LineHeight:				$baseLineHeight !default;
-$h5Color:					$baseHeadingColor !default;
-$h5HeadingPaddingBottom:	$baseHeadingPaddingBottom !default;
-$h5HeadingMarginBottom:		$baseHeadingMarginBottom !default;
-
-$h6FontFamily:				$baseHeadingFontFamily !default;
-$h6FontWeight:				$baseHeadingFontWeight !default;
-$h6FontSize:				$baseFontSize !default;
-$h6LineHeight:				$baseLineHeight !default;
-$h6Color:					$baseHeadingColor !default;
-$h6HeadingPaddingBottom:	$baseHeadingPaddingBottom !default;
-$h6HeadingMarginBottom:		$baseHeadingMarginBottom !default;
 
 // Small Text
-$smallTextFontFamily:	$baseFontFamily !default;
-$smallTextFontWeight:	normal !default;
-$smallTextFontSize:		($baseFontSize - 1) !default;
-$smallTextLineHeight:	$baseLineHeight !default;
-$smallTextColor:		$baseColor !default;
 
 
 // TABLES
 // -------------------------
-$tableBorderWidth:			0px !default; // The width for any border in or around a table
-$tableBorderStyle:	 		solid !default;
-$tableBorderColor:			$baseBorderColor !default;
-$tableCellPadding:			10px !default;
 
 // Table Headers
-$tableHeadingFontFamily:	$baseHeadingFontFamily !default;
-$tableHeadingFontSize:		$baseHeadingFontSize !default;
-$tableHeadingFontWeight:	$baseHeadingFontWeight !default;
-$tableHeadingLineHeight:	$baseHeadingLineHeight !default;
-$tableHeadingColor:			$baseHeadingColor !default;
-$tableHeadingCellPadding:	$tableCellPadding !default;
 
 // Table Body
-$tableBodyFontFamily:		$fontFamily !default;
-$tableBodyFontSize:			$baseFontSize !default;
-$tableBodyFontWeight:		$baseFontWeight !default;
-$tableBodyLineHeight:		$baseLineHeight !default;
-$tableBodyColor:			$baseColor !default;
-$tableBodyCellPadding:		$tableCellPadding !default;
 
 
 // IMAGE PATHS
 // -------------------------
-$imgDir: '../images/' !default; // Base image directory
-$imgSpritePath: $imgDir + 'sprite.png' !default;
 
 
 // BUTTONS
 // -------------------------
-$btnSpritePath: 		$imgDir + 'btn_sprite.png' !default;
-$btnSpriteSpacing: 		40px !default; 			// Spacing in your button sprite from the top of one button state to the next 
-$btnUsingHoverState:	true !default;  // Set to true if you have 2 button states
-$btnUsingActiveState: 	false !default; // Set to true if you have 3 button states
-
-// 0-based index of the order of sprites in your btn sprite
-$btnDefaultOrder: 	0 !default; 
-$btnPrimaryOrder:	1 !default;
-$btnAlt1Order:		2 !default;
-$btnAlt2Order:		3 !default;
-$btnAlt3Order:		4 !default;
-
-// Default-State Button Positions
-$btnDefaultPostion:	0px ($btnSpriteSpacing * $btnDefaultOrder) !default;
-$btnPrimaryPostion:	0px ($btnSpriteSpacing * $btnPrimaryOrder) !default;
-$btnAlt1Postion:	0px ($btnSpriteSpacing * $btnAlt1Order) !default;
-$btnAlt2Postion:	0px ($btnSpriteSpacing * $btnAlt2Order) !default;
-$btnAlt3Postion:	0px ($btnSpriteSpacing * $btnAlt3Order) !default;
-
-// Hover-State Button Positions
-//$btnDefaultPositionHover:	if($btnUsingHoverState) ? ($btnSpriteSpacing + $btnDefaultPostion): $btnDefaultPostion !default;
-//$btnPrimaryPositionHover:	if($btnUsingHoverState) ? ($btnSpriteSpacing + $btnPrimaryPostion): $btnPrimaryPostion !default;
-//$btnAlt1PositionHover:	if($btnUsingHoverState) ? ($btnSpriteSpacing + $btnAlt1Postion): $btnAlt1Postion !default;
-//$btnAlt2PositionHover:	if($btnUsingHoverState) ? ($btnSpriteSpacing + $btnAlt2Postion): $btnAlt2Postion !default;
-//$btnAlt3PositionHover:	if($btnUsingHoverState) ? ($btnSpriteSpacing + $btnAlt3Postion): $btnAlt3Postion !default;
-
-//// Active-State Button Positions
-//$btnDefaultPositionActive:	if($btnUsingActiveState) ? ($btnSpriteSpacing + $btnDefaultPositionHover) : $btnDefaultPositionHover !default;
-//$btnPrimaryPositionActive:	if($btnUsingActiveState) ? ($btnSpriteSpacing + $btnPrimaryPositionHover) : $btnPrimaryPositionHover !default;
-//$btnAlt1PositionActive:		if($btnUsingActiveState) ? ($btnSpriteSpacing + $btnAlt1PositionHover) : $btnAlt1PositionHover !default;
-//$btnAlt2PositionActive:		if($btnUsingActiveState) ? ($btnSpriteSpacing + $btnAlt2PositionHover) : $btnAlt2PositionHover !default;
-//$btnAlt3PositionActive:		if($btnUsingActiveState) ? ($btnSpriteSpacing + $btnAlt3PositionHover) : $btnAlt3PositionHover !default;
 
 
 // FORMS
 // -------------------------
-$labelFontFamily:	$baseFontFamily !default;
-$labelFontWeight:	$baseFontWeight !default;
-$labelFontSize:		$baseFontSize !default;
-$labelLineHeight:	$baseLineHeight !default;
-$labelColor:		$baseColor !default;
-
-$formFieldFontFamily:	$baseFontFamily !default;
-$formFieldFontWeight:	$baseFontWeight !default;
-$formFieldFontSize:		$baseFontSize !default;
-$formFieldLineHeight:	$baseLineHeight !default;
-$placeholderText:		lighten($baseColor, 5%) !default;
-$formFieldColor:		$baseColor !default;
-$formFieldColorFocus:	$baseColor !default;
-
-$altFormFieldFontFamily:	$altFontFamily !default;
-$altFormFieldFontWeight:	$baseFontWeight !default;
-$altFormFieldFontSize:		$baseFontSize !default;
-$altFormFieldLineHeight:	$baseLineHeight !default;
-$altFormFieldColor:			lighten($baseColor, 15%) !default;
-$altFormFieldColorFocus:	$baseColor !default;
-
-$inputNoteFontFamily:	$smallTextFontFamily !default;
-$inputNoteFontWeight:	$smallTextFontWeight !default;
-$inputNoteFontSize:		$smallTextFontSize !default;
-$inputNoteLineHeight:	$smallTextLineHeight !default;
-$inputNoteColor:		$smallTextColor !default;
 
 
 // NAVBAR
 // -------------------------
-$navBarFontFamily:	$baseHeadingFontFamily !default;
-$navBarFontSize:	$baseHeadingFontSize !default;
-$navBarColor:		$baseHeadingColor !default;
-$navBarColorHover:	lighten($baseHeadingColor, 15%) !default;
-$navBarBgColor:		transparent !default;
-$navBarBgColorHover:transparent !default;
 
 
 // NOTICES, ALERTS, ERRORS
 // -------------------------
-$alertBorderWidth:	4px !default;
-$alertBorderStyle:	solid !default;
-$alertBorderRadius:	0px !default;
-
-$successColor:					$textColorDark !default;
-$successBgColor:				lighten($green, 20%) !default;
-$successBorderColor:			darken($green, 20%) !default;
-$successLinkColor: 				$linkColor !default;
-$successLinkColorHover: 		$linkColorHover !default;
-$successLinkDecoration: 		$linkDecoration !default;
-$successLinkDecorationHover: 	$linkDecorationHover !default;
-
-$noticeColor:					$textColorDark !default;
-$noticeBgColor:					lighten($yellow, 20%) !default;
-$noticeBorderColor:				darken($yellow, 20%) !default;
-$noticeLinkColor: 				$linkColor !default;
-$noticeLinkColorHover: 			$linkColorHover !default;
-$noticeLinkDecoration: 			$linkDecoration !default;
-$noticeLinkDecorationHover: 	$linkDecorationHover !default;
-
-$errorColor:				$textColorDark !default;
-$errorBgColor:				lighten($red, 20%) !default;
-$errorBorderColor:			darken($red, 20%) !default;
-$errorLinkColor: 			$linkColor !default;
-$errorLinkColorHover: 		$linkColorHover !default;
-$errorLinkDecoration: 		$linkDecoration !default;
-$errorLinkDecorationHover: 	$linkDecorationHover !default;
-
-
-// GRID
-// -------------------------
-$gridColumns:             12 !default;
-$gridColumnWidth:         60px !default;
-$gridGutterWidth:         20px !default;
-$gridRowWidth:            ($gridColumns * $gridColumnWidth) + ($gridGutterWidth * ($gridColumns - 1)) !default;
 
 
 
 // BLOCKS
 // -------------------------
-$blockBorder: 			0px solid $baseBorderColor;
-$blockBgColor:			$baseBgColor !default;
-$blockTitleColor:		$baseHeadingColor !default;
-$blockTitleBgColor:		transparent !default;
-$blockContentColor:		$textColor !default;
-$blockContentBgColor:	transparent !default;
 
 
 // Z-Index Master List
 // -------------------------
-$zindexDropdown:		1000 !default;
-$zindexPopover:			1010 !default;
-$zindexTooltip:			1020 !default;
-$zindexModalBackdrop: 	1040 !default;
-$zindexModal:			1050 !default;
 
-
-// Sprite icons path
-// -------------------------
-$iconSpritePath:          "../bootstrap/img/glyphicons-halflings.png" !default;
-$iconWhiteSpritePath:     "../bootstrap/img/glyphicons-halflings-white.png" !default;

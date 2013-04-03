@@ -13,11 +13,10 @@
 @import "reset";
 
 // Page structure
-@import "scaffolding";
 @import "layouts";
 
 // Base CSS
-@import "type"; // includes prices
+@import "typography"; // includes prices
 @import "forms";
 @import "tables";
 

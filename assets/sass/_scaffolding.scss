@@ -1,9 +1,0 @@
-// scaffolding.scss
-
-body {
-	background: $baseBg;
-	@include font-shorthand();
-	font-family: $fontFamily;
-	color: $textColor;
-	text-align: center;
-}

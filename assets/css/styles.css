@@ -3,38 +3,27 @@
  *
  * @author Kevin Kirchner, https://github.com/kevinkirchner
  */
-/* line 34, ../sass/_mixins.scss */
+/* line 27, ../sass/_mixins.scss */
 .clearfix {
   *zoom: 1;
 }
-/* line 25, ../sass/_mixins.scss */
+/* line 18, ../sass/_mixins.scss */
 .clearfix:before, .clearfix:after {
   display: table;
   content: "";
 }
-/* line 29, ../sass/_mixins.scss */
+/* line 22, ../sass/_mixins.scss */
 .clearfix:after {
   clear: both;
 }
 
-/* line 126, ../sass/_mixins.scss */
+/* line 111, ../sass/_mixins.scss */
 .hide-text {
   font: 0/0 a;
   color: transparent;
   text-shadow: none;
   background-color: transparent;
   border: 0;
-}
-
-/* line 307, ../sass/_mixins.scss */
-.input-block-level {
-  display: block;
-  width: 100%;
-  min-height: 28px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  box-sizing: border-box;
 }
 
 /* line 18, ../sass/_reset.scss */
@@ -177,19 +166,62 @@ textarea {
   vertical-align: top;
 }
 
-/* line 3, ../sass/_scaffolding.scss */
+/* line 9, ../sass/_layouts.scss */
+.main .wrapper.col-main, .main .wrapper.col-left, .main .wrapper.col-right {
+  width: 100%;
+}
+
+/* line 4, ../sass/_typography.scss */
+html {
+  font-size: 62.5%;
+}
+
+/* line 5, ../sass/_typography.scss */
 body {
-  background: white;
-  font-size: 12px;
-  font-weight: normal;
-  line-height: 18px;
-  font-family: sans-serif;
-  color: #444444;
-  text-align: center;
+  font-size: 16px;
+  font-size: 1.6rem;
+  line-height: 24px;
+  line-height: 2.4rem;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+/* line 7, ../sass/_typography.scss */
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  line-height: 48px;
+  line-height: 4.8rem;
 }
 
 /* _buttons.scss */
 /* _navs.scss */
 /* _cms_home.scss */
 /* _cart.scss */
+@media screen and (min-width: 600px) {
+  /* line 8, ../sass/_responsive.scss */
+  .main .col-main {
+    float: right;
+  }
+  /* line 9, ../sass/_responsive.scss */
+  .main .col-wrapper {
+    float: left;
+  }
+  /* line 10, ../sass/_responsive.scss */
+  .main .col-left {
+    float: left;
+  }
+  /* line 11, ../sass/_responsive.scss */
+  .main .col-right {
+    float: right;
+  }
+  /* line 13, ../sass/_responsive.scss */
+  .main.col2-right-layout .col-main {
+    float: left;
+  }
+}
+@media screen and (min-width: 960px) {
+  /* line 19, ../sass/_responsive.scss */
+  .wrapper {
+    margin: 0 auto;
+    width: 960px;
+  }
+}
 @import url(../css/client.css);

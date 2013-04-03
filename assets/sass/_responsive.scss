@@ -1,0 +1,24 @@
+// _responsive.scss
+
+@media screen and (min-width: 600px) {
+
+  // layouts
+  .main {
+    
+    .col-main { float:right; }
+    .col-wrapper { float:left; }
+    .col-left { float:left; }
+    .col-right { float:right; }
+    
+    &.col2-right-layout .col-main { float:left; }
+  }
+
+}
+
+@media screen and (min-width: 960px) {
+  .wrapper { 
+    margin:0 auto;
+    width:960px;
+  }
+  
+}
