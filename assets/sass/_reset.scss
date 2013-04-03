@@ -2,6 +2,7 @@
 // Reset
 // Adapted from http://github.com/necolas/normalize.css
 // --------------------------------------------------
+* { margin:0; padding:0;}
 
 // Display in IE6-9 and FF3
 // -------------------------
@@ -40,11 +41,6 @@ audio:not([controls]) {
 // Base settings
 // -------------------------
 
-html {
-  font-size: 100%;
-  -webkit-text-size-adjust: 100%;
-      -ms-text-size-adjust: 100%;
-}
 // Focus states
 a:focus {
   @include tab-focus();

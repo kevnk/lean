@@ -1,11 +1,15 @@
 //_layouts.scss
 
 // Global
-.main {
-  .wrapper {
-    
-    &.col-main,
-    &.col-left,
-    &.col-right { width:100%;}
-  }
+.header-container,
+.main-container,
+.footer-container { }
+
+.wrapper { 
+    padding-left: 15px; 
+    padding-right: 15px; 
 }
+
+.col-main,
+.col-left,
+.col-right { width: 100%; }

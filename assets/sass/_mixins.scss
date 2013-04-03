@@ -4,8 +4,7 @@
 // --------------------------------------------------
 
 @mixin x-rem($property, $value) {
-    // times '10' b/c html font-size is 62.5% which makes 16px == 1.6rem
-    #{$property}: $value * 10px;
+    #{$property}: $value * ($baselinePx/$baselineRem);
     #{$property}: #{$value}rem;
 }
 

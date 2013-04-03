@@ -3,21 +3,21 @@
  *
  * @author Kevin Kirchner, https://github.com/kevinkirchner
  */
-/* line 27, ../sass/_mixins.scss */
+/* line 26, ../sass/_mixins.scss */
 .clearfix {
   *zoom: 1;
 }
-/* line 18, ../sass/_mixins.scss */
+/* line 17, ../sass/_mixins.scss */
 .clearfix:before, .clearfix:after {
   display: table;
   content: "";
 }
-/* line 22, ../sass/_mixins.scss */
+/* line 21, ../sass/_mixins.scss */
 .clearfix:after {
   clear: both;
 }
 
-/* line 111, ../sass/_mixins.scss */
+/* line 110, ../sass/_mixins.scss */
 .hide-text {
   font: 0/0 a;
   color: transparent;
@@ -26,7 +26,13 @@
   border: 0;
 }
 
-/* line 18, ../sass/_reset.scss */
+/* line 5, ../sass/_reset.scss */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 19, ../sass/_reset.scss */
 article,
 aside,
 details,
@@ -40,7 +46,7 @@ section {
   display: block;
 }
 
-/* line 27, ../sass/_reset.scss */
+/* line 28, ../sass/_reset.scss */
 audio,
 canvas,
 video {
@@ -49,32 +55,25 @@ video {
   *zoom: 1;
 }
 
-/* line 36, ../sass/_reset.scss */
+/* line 37, ../sass/_reset.scss */
 audio:not([controls]) {
   display: none;
 }
 
-/* line 43, ../sass/_reset.scss */
-html {
-  font-size: 100%;
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-}
-
-/* line 49, ../sass/_reset.scss */
+/* line 45, ../sass/_reset.scss */
 a:focus {
   outline: thin dotted #333;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
 
-/* line 54, ../sass/_reset.scss */
+/* line 50, ../sass/_reset.scss */
 a:hover,
 a:active {
   outline: 0;
 }
 
-/* line 62, ../sass/_reset.scss */
+/* line 58, ../sass/_reset.scss */
 sub,
 sup {
   position: relative;
@@ -83,17 +82,17 @@ sup {
   vertical-align: baseline;
 }
 
-/* line 68, ../sass/_reset.scss */
+/* line 64, ../sass/_reset.scss */
 sup {
   top: -0.5em;
 }
 
-/* line 71, ../sass/_reset.scss */
+/* line 67, ../sass/_reset.scss */
 sub {
   bottom: -0.25em;
 }
 
-/* line 78, ../sass/_reset.scss */
+/* line 74, ../sass/_reset.scss */
 img {
   max-width: 100%;
   height: auto;
@@ -102,18 +101,18 @@ img {
   -ms-interpolation-mode: bicubic;
 }
 
-/* line 87, ../sass/_reset.scss */
+/* line 83, ../sass/_reset.scss */
 #mapCanvas label {
   width: auto;
   display: inline;
 }
 
-/* line 88, ../sass/_reset.scss */
+/* line 84, ../sass/_reset.scss */
 #mapCanvas img {
   max-width: none;
 }
 
-/* line 97, ../sass/_reset.scss */
+/* line 93, ../sass/_reset.scss */
 button,
 input,
 select,
@@ -123,21 +122,21 @@ textarea {
   vertical-align: middle;
 }
 
-/* line 103, ../sass/_reset.scss */
+/* line 99, ../sass/_reset.scss */
 button,
 input {
   *overflow: visible;
   line-height: normal;
 }
 
-/* line 108, ../sass/_reset.scss */
+/* line 104, ../sass/_reset.scss */
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   padding: 0;
   border: 0;
 }
 
-/* line 115, ../sass/_reset.scss */
+/* line 111, ../sass/_reset.scss */
 button,
 input[type="button"],
 input[type="reset"],
@@ -146,7 +145,7 @@ input[type="submit"] {
   -webkit-appearance: button;
 }
 
-/* line 119, ../sass/_reset.scss */
+/* line 115, ../sass/_reset.scss */
 input[type="search"] {
   -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
@@ -154,40 +153,50 @@ input[type="search"] {
   -webkit-appearance: textfield;
 }
 
-/* line 126, ../sass/_reset.scss */
+/* line 122, ../sass/_reset.scss */
 input[type="search"]::-webkit-search-decoration,
 input[type="search"]::-webkit-search-cancel-button {
   -webkit-appearance: none;
 }
 
-/* line 129, ../sass/_reset.scss */
+/* line 125, ../sass/_reset.scss */
 textarea {
   overflow: auto;
   vertical-align: top;
 }
 
-/* line 9, ../sass/_layouts.scss */
-.main .wrapper.col-main, .main .wrapper.col-left, .main .wrapper.col-right {
+/* line 8, ../sass/_layouts.scss */
+.wrapper {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* line 15, ../sass/_layouts.scss */
+.col-main,
+.col-left,
+.col-right {
   width: 100%;
 }
 
 /* line 4, ../sass/_typography.scss */
 html {
   font-size: 62.5%;
+  -webkit-text-size-adjust: 62.5%;
+  -ms-text-size-adjust: 62.5%;
 }
 
-/* line 5, ../sass/_typography.scss */
+/* line 9, ../sass/_typography.scss */
 body {
-  font-size: 16px;
+  font-size: 16;
   font-size: 1.6rem;
-  line-height: 24px;
+  line-height: 24;
   line-height: 2.4rem;
   font-family: Helvetica, Arial, sans-serif;
 }
 
-/* line 7, ../sass/_typography.scss */
+/* line 11, ../sass/_typography.scss */
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-  line-height: 48px;
+  line-height: 48;
   line-height: 4.8rem;
 }
 
@@ -195,33 +204,105 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 /* _navs.scss */
 /* _cms_home.scss */
 /* _cart.scss */
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 450px) {
+  /* line 7, ../sass/_responsive.scss */
+  .col3-layout .col-left {
+    float: left;
+    width: 48%;
+  }
   /* line 8, ../sass/_responsive.scss */
-  .main .col-main {
+  .col3-layout .col-right {
     float: right;
-  }
-  /* line 9, ../sass/_responsive.scss */
-  .main .col-wrapper {
-    float: left;
-  }
-  /* line 10, ../sass/_responsive.scss */
-  .main .col-left {
-    float: left;
-  }
-  /* line 11, ../sass/_responsive.scss */
-  .main .col-right {
-    float: right;
-  }
-  /* line 13, ../sass/_responsive.scss */
-  .main.col2-right-layout .col-main {
-    float: left;
+    width: 48%;
   }
 }
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 692px) {
+  /* line 15, ../sass/_responsive.scss */
+  .col-main {
+    float: right;
+    width: 69%;
+  }
+
+  /* line 16, ../sass/_responsive.scss */
+  .col-wrapper {
+    float: left;
+    width: 69%;
+  }
+
+  /* line 17, ../sass/_responsive.scss */
+  .col-left {
+    float: left;
+    width: 29%;
+  }
+
+  /* line 18, ../sass/_responsive.scss */
+  .col-right {
+    float: right;
+    width: 29%;
+  }
+
   /* line 19, ../sass/_responsive.scss */
+  .col2-right-layout .col-main {
+    float: left;
+  }
+
+  /* line 21, ../sass/_responsive.scss */
+  .col1-layout .col-main {
+    width: 100%;
+  }
+
+  /* line 23, ../sass/_responsive.scss */
+  .col3-layout .col-wrapper {
+    width: 79%;
+  }
+  /* line 24, ../sass/_responsive.scss */
+  .col3-layout .col-wrapper .col-main {
+    width: 73.5%;
+  }
+  /* line 25, ../sass/_responsive.scss */
+  .col3-layout .col-wrapper .col-left {
+    width: 24%;
+  }
+  /* line 27, ../sass/_responsive.scss */
+  .col3-layout .col-right {
+    width: 19%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  /* line 32, ../sass/_responsive.scss */
   .wrapper {
     margin: 0 auto;
-    width: 960px;
+    width: 1170px;
+  }
+
+  /* line 38, ../sass/_responsive.scss */
+  .col2-left-layout .col-main,
+  .col2-right-layout .col-main {
+    width: 800px;
+  }
+  /* line 40, ../sass/_responsive.scss */
+  .col2-left-layout .col-left,
+  .col2-left-layout .col-right,
+  .col2-right-layout .col-left,
+  .col2-right-layout .col-right {
+    width: 350px;
+  }
+
+  /* line 43, ../sass/_responsive.scss */
+  .col3-layout .col-wrapper {
+    width: 890px;
+  }
+  /* line 45, ../sass/_responsive.scss */
+  .col3-layout .col-wrapper .col-main {
+    width: 600px;
+  }
+  /* line 46, ../sass/_responsive.scss */
+  .col3-layout .col-wrapper .col-left {
+    width: 260px;
+  }
+  /* line 48, ../sass/_responsive.scss */
+  .col3-layout .col-right {
+    width: 260px;
   }
 }
 @import url(../css/client.css);

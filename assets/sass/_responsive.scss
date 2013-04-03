@@ -1,24 +1,50 @@
 // _responsive.scss
 
-@media screen and (min-width: 600px) {
+// NOTE: in 3 column layout, the left and right column get as small as 127px. In other layouts, 194px is the minimum width of left or right column.
 
-  // layouts
-  .main {
-    
-    .col-main { float:right; }
-    .col-wrapper { float:left; }
-    .col-left { float:left; }
-    .col-right { float:right; }
-    
-    &.col2-right-layout .col-main { float:left; }
-  }
-
+@media screen and (min-width: 450px) {
+    .col3-layout {
+        .col-left { float: left; width:48%;}
+        .col-right { float: right; width: 48%; }
+    }
 }
 
-@media screen and (min-width: 960px) {
-  .wrapper { 
-    margin:0 auto;
-    width:960px;
-  }
-  
+
+@media screen and (min-width: 692px) {
+    // layouts
+    .col-main { float:right; width: 69%; }
+    .col-wrapper { float:left; width: 69%; }
+    .col-left { float:left; width: 29%;}
+    .col-right { float:right; width: 29%; }
+    .col2-right-layout .col-main { float:left; }
+
+    .col1-layout .col-main { width: 100%; }
+    .col3-layout {
+        .col-wrapper { width: 79%; 
+            .col-main { width: 73.5%; }
+            .col-left { width: 24%; }
+        }
+        .col-right { width: 19%; }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .wrapper { 
+        margin:0 auto;
+        width:1170px;
+    }
+    .col2-left-layout,
+    .col2-right-layout {
+        .col-main { width:800px; }
+        .col-left,
+        .col-right { width:350px;}
+    }
+    .col3-layout {
+        .col-wrapper {
+            width: 890px;
+            .col-main { width: 600px; }
+            .col-left { width: 260px; }
+        }
+        .col-right { width: 260px;}
+    }
 }
