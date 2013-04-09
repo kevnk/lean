@@ -1,39 +1,69 @@
-@import url(../css/client.css);
 /*
  * Lean Theme
  *
  * @author Kevin Kirchner, https://github.com/kevinkirchner
  */
-/* line 26, /Volumes/Dev/www/_gitrepos/lean/assets/sass/_mixins.scss */
+/* Core variables and mixins */
+/* _variables.scss  */
+/* COLORS
+ * ------------------------- */
+/* Background Colors: for general elements (e.g. body, page, block) */
+/* Background Colors: for custom elements (e.g. checkout steps, headings) */
+/* LINKS
+ * ------------------------- */
+/* TYPOGRAPHY
+ * ------------------------- */
+/*
+/* Awesome Font-Stacks
+*/ */
+/* Small Text */
+/* TABLES
+ * ------------------------- */
+/* Table Headers */
+/* Table Body */
+/* IMAGE PATHS
+ * ------------------------- */
+/* BUTTONS
+ * ------------------------- */
+/* FORMS
+ * ------------------------- */
+/* NAVBAR
+ * ------------------------- */
+/* NOTICES, ALERTS, ERRORS
+ * ------------------------- */
+/* BLOCKS
+ * ------------------------- */
+/* Z-Index Master List
+ * ------------------------- */
+/* Modify this for custom colors, font-sizes, etc */
+/* line 26, ../sass/_mixins.scss */
 .clearfix {
   *zoom: 1;
 }
-/* line 17, /Volumes/Dev/www/_gitrepos/lean/assets/sass/_mixins.scss */
+/* line 17, ../sass/_mixins.scss */
 .clearfix:before, .clearfix:after {
   display: table;
   content: "";
 }
-/* line 21, /Volumes/Dev/www/_gitrepos/lean/assets/sass/_mixins.scss */
+/* line 21, ../sass/_mixins.scss */
 .clearfix:after {
   clear: both;
 }
 
-/* line 110, /Volumes/Dev/www/_gitrepos/lean/assets/sass/_mixins.scss */
-.hide-text {
-  font: 0/0 a;
-  color: transparent;
-  text-shadow: none;
-  background-color: transparent;
-  border: 0;
-}
-
-/* line 5, /Volumes/Dev/www/_gitrepos/lean/assets/sass/_reset.scss */
+/* CSS Reset */
+/*
+ * Reset
+ * Adapted from http://github.com/necolas/normalize.css
+ * -------------------------------------------------- */
+/* line 5, ../sass/_reset.scss */
 * {
   margin: 0;
   padding: 0;
 }
 
-/* line 19, /Volumes/Dev/www/_gitrepos/lean/assets/sass/_reset.scss */
+/* Display in IE6-9 and FF3
+ * ------------------------- */
+/* line 19, ../sass/_reset.scss */
 article,
 aside,
 details,
@@ -47,7 +77,9 @@ section {
   display: block;
 }
 
-/* line 28, /Volumes/Dev/www/_gitrepos/lean/assets/sass/_reset.scss */
+/* Display block in IE6-9 and FF3
+ * ------------------------- */
+/* line 28, ../sass/_reset.scss */
 audio,
 canvas,
 video {
@@ -56,25 +88,33 @@ video {
   *zoom: 1;
 }
 
-/* line 37, /Volumes/Dev/www/_gitrepos/lean/assets/sass/_reset.scss */
+/* Prevents modern browsers from displaying 'audio' without controls
+ * ------------------------- */
+/* line 37, ../sass/_reset.scss */
 audio:not([controls]) {
   display: none;
 }
 
-/* line 45, /Volumes/Dev/www/_gitrepos/lean/assets/sass/_reset.scss */
+/* Base settings
+ * ------------------------- */
+/* Focus states */
+/* line 45, ../sass/_reset.scss */
 a:focus {
   outline: thin dotted #333;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
 
-/* line 50, /Volumes/Dev/www/_gitrepos/lean/assets/sass/_reset.scss */
+/* Hover & Active */
+/* line 50, ../sass/_reset.scss */
 a:hover,
 a:active {
   outline: 0;
 }
 
-/* line 58, /Volumes/Dev/www/_gitrepos/lean/assets/sass/_reset.scss */
+/* Prevents sub and sup affecting line-height in all browsers
+ * ------------------------- */
+/* line 58, ../sass/_reset.scss */
 sub,
 sup {
   position: relative;
@@ -83,37 +123,45 @@ sup {
   vertical-align: baseline;
 }
 
-/* line 64, /Volumes/Dev/www/_gitrepos/lean/assets/sass/_reset.scss */
+/* line 64, ../sass/_reset.scss */
 sup {
   top: -0.5em;
 }
 
-/* line 67, /Volumes/Dev/www/_gitrepos/lean/assets/sass/_reset.scss */
+/* line 67, ../sass/_reset.scss */
 sub {
   bottom: -0.25em;
 }
 
-/* line 74, /Volumes/Dev/www/_gitrepos/lean/assets/sass/_reset.scss */
+/* Img border in a's and image quality
+ * ------------------------- */
+/* line 74, ../sass/_reset.scss */
 img {
   max-width: 100%;
+  /* Make images inherently responsive */
   height: auto;
+  /* Make images inherently responsive */
   vertical-align: middle;
   border: 0;
   -ms-interpolation-mode: bicubic;
 }
 
-/* line 83, /Volumes/Dev/www/_gitrepos/lean/assets/sass/_reset.scss */
+/* Prevent max-width from affecting Google Maps */
+/* line 83, ../sass/_reset.scss */
 #mapCanvas label {
   width: auto;
   display: inline;
 }
 
-/* line 84, /Volumes/Dev/www/_gitrepos/lean/assets/sass/_reset.scss */
+/* line 84, ../sass/_reset.scss */
 #mapCanvas img {
   max-width: none;
 }
 
-/* line 93, /Volumes/Dev/www/_gitrepos/lean/assets/sass/_reset.scss */
+/* Forms
+ * ------------------------- */
+/* Font size in all browsers, margin changes, misc consistency */
+/* line 93, ../sass/_reset.scss */
 button,
 input,
 select,
@@ -123,70 +171,111 @@ textarea {
   vertical-align: middle;
 }
 
-/* line 99, /Volumes/Dev/www/_gitrepos/lean/assets/sass/_reset.scss */
+/* line 99, ../sass/_reset.scss */
 button,
 input {
   *overflow: visible;
+  /* Inner spacing ie IE6/7 */
   line-height: normal;
+  /* FF3/4 have !important on line-height in UA stylesheet */
 }
 
-/* line 104, /Volumes/Dev/www/_gitrepos/lean/assets/sass/_reset.scss */
+/* line 104, ../sass/_reset.scss */
 button::-moz-focus-inner,
 input::-moz-focus-inner {
+  /* Inner padding and border oddities in FF3/4 */
   padding: 0;
   border: 0;
 }
 
-/* line 111, /Volumes/Dev/www/_gitrepos/lean/assets/sass/_reset.scss */
+/* line 111, ../sass/_reset.scss */
 button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
   cursor: pointer;
+  /* Cursors on all buttons applied consistently */
   -webkit-appearance: button;
+  /* Style clickable inputs in iOS */
 }
 
-/* line 115, /Volumes/Dev/www/_gitrepos/lean/assets/sass/_reset.scss */
+/* line 115, ../sass/_reset.scss */
 input[type="search"] {
+  /* Appearance in Safari/Chrome */
   -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
   box-sizing: content-box;
   -webkit-appearance: textfield;
 }
 
-/* line 122, /Volumes/Dev/www/_gitrepos/lean/assets/sass/_reset.scss */
+/* line 122, ../sass/_reset.scss */
 input[type="search"]::-webkit-search-decoration,
 input[type="search"]::-webkit-search-cancel-button {
   -webkit-appearance: none;
+  /* Inner-padding issues in Chrome OSX, Safari 5 */
 }
 
-/* line 125, /Volumes/Dev/www/_gitrepos/lean/assets/sass/_reset.scss */
+/* line 125, ../sass/_reset.scss */
 textarea {
   overflow: auto;
+  /* Remove vertical scrollbar in IE6-9 */
   vertical-align: top;
+  /* Readability and alignment cross-browser */
 }
 
-/* line 8, /Volumes/Dev/www/_gitrepos/lean/assets/sass/_layouts.scss */
+/* Page structure */
+/*_layouts.scss */
+/* Global */
+/* line 8, ../sass/_layouts.scss */
 .wrapper {
   padding-left: 15px;
   padding-right: 15px;
 }
 
-/* line 15, /Volumes/Dev/www/_gitrepos/lean/assets/sass/_layouts.scss */
+/* line 18, ../sass/_layouts.scss */
 .col-main,
 .col-left,
-.col-right {
-  width: 100%;
+.col-right,
+.col2-set,
+.col3-set,
+.col4-set {
+  *zoom: 1;
+}
+/* line 17, ../sass/_mixins.scss */
+.col-main:before, .col-main:after,
+.col-left:before,
+.col-left:after,
+.col-right:before,
+.col-right:after,
+.col2-set:before,
+.col2-set:after,
+.col3-set:before,
+.col3-set:after,
+.col4-set:before,
+.col4-set:after {
+  display: table;
+  content: "";
+}
+/* line 21, ../sass/_mixins.scss */
+.col-main:after,
+.col-left:after,
+.col-right:after,
+.col2-set:after,
+.col3-set:after,
+.col4-set:after {
+  clear: both;
 }
 
-/* line 4, /Volumes/Dev/www/_gitrepos/lean/assets/sass/_typography.scss */
+/* Base CSS */
+/*_typography.scss */
+/* line 4, ../sass/_typography.scss */
 html {
   font-size: 62.5%;
   -webkit-text-size-adjust: 62.5%;
   -ms-text-size-adjust: 62.5%;
 }
 
-/* line 9, /Volumes/Dev/www/_gitrepos/lean/assets/sass/_typography.scss */
+/* line 9, ../sass/_typography.scss */
 body {
   font-size: 16;
   font-size: 1.6rem;
@@ -195,41 +284,75 @@ body {
   font-family: Helvetica, Arial, sans-serif;
 }
 
-/* line 11, /Volumes/Dev/www/_gitrepos/lean/assets/sass/_typography.scss */
+/* line 11, ../sass/_typography.scss */
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   line-height: 48;
   line-height: 4.8rem;
 }
 
+/* includes prices */
+/*_forms.scss */
+/*_tables.scss */
+/* Components: common */
+/*_sprites.scss */
 /* _buttons.scss */
+/*_alerts.scss */
+/* Components */
+/*_navbar.scss  */
 /* _navs.scss */
+/* breadcrumbs, layered navigation */
+/*_pager.scss */
+/* ---------------------------------------------------------
+ * Magento Pages
+ * --------------------------------------------------------- */
 /* _cms_home.scss */
+/*_product_list.scss */
+/*_product_detail.scss */
 /* _cart.scss */
+/*_pagination.scss */
+/* ---------------------------------------------------------
+ * Any plugin css could go here if your not putting it in the root js directory (which is recommended)
+ * --------------------------------------------------------- */
+/* ---------------------------------------------------------
+ * Responsive 
+ * --------------------------------------------------------- */
 @media screen and (min-width: 350px) {
-  /* line 18, /Volumes/Dev/www/_gitrepos/lean/assets/sass/_responsive.scss */
+  /* line 20, ../sass/_responsive.scss */
   .col3-layout .col-main {
     width: 100%;
   }
-  /* line 19, /Volumes/Dev/www/_gitrepos/lean/assets/sass/_responsive.scss */
+  /* line 21, ../sass/_responsive.scss */
   .col3-layout .col-left {
     width: 46.875%;
     float: left;
   }
-  /* line 20, /Volumes/Dev/www/_gitrepos/lean/assets/sass/_responsive.scss */
+  /* line 22, ../sass/_responsive.scss */
   .col3-layout .col-right {
     width: 46.875%;
     float: right;
   }
+
+  /* line 29, ../sass/_responsive.scss */
+  .col2-set .col-1,
+  .col2-set .col-2 {
+    float: left;
+    width: 46.875%;
+    margin-left: 6.25%;
+  }
+  /* line 30, ../sass/_responsive.scss */
+  .col2-set .col-1 {
+    margin-left: 0;
+  }
 }
 @media screen and (min-width: 450px) {
-  /* line 28, /Volumes/Dev/www/_gitrepos/lean/assets/sass/_responsive.scss */
+  /* line 41, ../sass/_responsive.scss */
   .col2-left-layout .col-left,
   .col2-left-layout .col-right,
   .col2-right-layout .col-left,
   .col2-right-layout .col-right {
     float: none;
   }
-  /* line 31, /Volumes/Dev/www/_gitrepos/lean/assets/sass/_responsive.scss */
+  /* line 44, ../sass/_responsive.scss */
   .col2-left-layout .col-left .left-top,
   .col2-left-layout .col-left .right-top,
   .col2-left-layout .col-right .left-top,
@@ -238,10 +361,10 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   .col2-right-layout .col-left .right-top,
   .col2-right-layout .col-right .left-top,
   .col2-right-layout .col-right .right-top {
-    width: 47.619%;
+    width: 47.61905%;
     float: left;
   }
-  /* line 33, /Volumes/Dev/www/_gitrepos/lean/assets/sass/_responsive.scss */
+  /* line 46, ../sass/_responsive.scss */
   .col2-left-layout .col-left .left-bottom,
   .col2-left-layout .col-left .right-bottom,
   .col2-left-layout .col-right .left-bottom,
@@ -250,52 +373,79 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   .col2-right-layout .col-left .right-bottom,
   .col2-right-layout .col-right .left-bottom,
   .col2-right-layout .col-right .right-bottom {
-    width: 47.619%;
+    width: 47.61905%;
     float: right;
+  }
+
+  /* line 54, ../sass/_responsive.scss */
+  .col2-set .col-1,
+  .col2-set .col-2 {
+    width: 47.61905%;
+    margin-left: 4.7619%;
+  }
+  /* line 55, ../sass/_responsive.scss */
+  .col2-set .col-1 {
+    margin-left: 0;
+  }
+
+  /* line 61, ../sass/_responsive.scss */
+  .col4-set .col-1,
+  .col4-set .col-2,
+  .col4-set .col-3,
+  .col4-set .col-4 {
+    float: left;
+    width: 47.61905%;
+    margin-left: 4.7619%;
+  }
+  /* line 63, ../sass/_responsive.scss */
+  .col4-set .col-1,
+  .col4-set .col-3 {
+    margin-left: 0;
+    clear: both;
   }
 }
 @media screen and (min-width: 690px) {
-  /* line 40, /Volumes/Dev/www/_gitrepos/lean/assets/sass/_responsive.scss */
+  /* line 72, ../sass/_responsive.scss */
   .col3-layout .col-main {
     width: 100%;
   }
-  /* line 42, /Volumes/Dev/www/_gitrepos/lean/assets/sass/_responsive.scss */
+  /* line 74, ../sass/_responsive.scss */
   .col3-layout .col-left,
   .col3-layout .col-right {
-    width: 48.485%;
+    width: 48.48485%;
   }
-  /* line 45, /Volumes/Dev/www/_gitrepos/lean/assets/sass/_responsive.scss */
+  /* line 77, ../sass/_responsive.scss */
   .col3-layout .col-left .left-top,
   .col3-layout .col-left .right-top,
   .col3-layout .col-right .left-top,
   .col3-layout .col-right .right-top {
-    width: 46.97%;
+    width: 46.9697%;
     float: left;
   }
-  /* line 47, /Volumes/Dev/www/_gitrepos/lean/assets/sass/_responsive.scss */
+  /* line 79, ../sass/_responsive.scss */
   .col3-layout .col-left .left-bottom,
   .col3-layout .col-left .right-bottom,
   .col3-layout .col-right .left-bottom,
   .col3-layout .col-right .right-bottom {
-    width: 46.97%;
+    width: 46.9697%;
     float: right;
   }
 
-  /* line 52, /Volumes/Dev/www/_gitrepos/lean/assets/sass/_responsive.scss */
+  /* line 84, ../sass/_responsive.scss */
   .col2-left-layout .col-main,
   .col2-right-layout .col-main {
     float: right;
-    width: 67.879%;
+    width: 67.87879%;
   }
-  /* line 57, /Volumes/Dev/www/_gitrepos/lean/assets/sass/_responsive.scss */
+  /* line 89, ../sass/_responsive.scss */
   .col2-left-layout .col-left,
   .col2-left-layout .col-right,
   .col2-right-layout .col-left,
   .col2-right-layout .col-right {
     float: left;
-    width: 29.091%;
+    width: 29.09091%;
   }
-  /* line 63, /Volumes/Dev/www/_gitrepos/lean/assets/sass/_responsive.scss */
+  /* line 95, ../sass/_responsive.scss */
   .col2-left-layout .col-left .left-top,
   .col2-left-layout .col-left .left-bottom,
   .col2-left-layout .col-left .right-top,
@@ -315,35 +465,74 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     float: none;
     width: auto;
   }
-  /* line 65, /Volumes/Dev/www/_gitrepos/lean/assets/sass/_responsive.scss */
+  /* line 97, ../sass/_responsive.scss */
   .col2-left-layout .col-right,
   .col2-right-layout .col-right {
     float: right;
   }
 
-  /* line 67, /Volumes/Dev/www/_gitrepos/lean/assets/sass/_responsive.scss */
+  /* line 99, ../sass/_responsive.scss */
   .col2-right-layout .col-main {
     float: left;
   }
+
+  /* line 105, ../sass/_responsive.scss */
+  .col2-set .col-1,
+  .col2-set .col-2 {
+    width: 48.48485%;
+    margin-left: 3.0303%;
+  }
+  /* line 106, ../sass/_responsive.scss */
+  .col2-set .col-1 {
+    margin-left: 0;
+  }
+
+  /* line 111, ../sass/_responsive.scss */
+  .col3-set .col-1,
+  .col3-set .col-2,
+  .col3-set .col-3 {
+    float: left;
+    width: 31.22424%;
+    margin-left: 3.0303%;
+  }
+  /* line 112, ../sass/_responsive.scss */
+  .col3-set .col-1 {
+    margin-left: 0;
+  }
+
+  /* line 118, ../sass/_responsive.scss */
+  .col4-set .col-1,
+  .col4-set .col-2,
+  .col4-set .col-3,
+  .col4-set .col-4 {
+    float: left;
+    width: 22.69091%;
+    margin-left: 3.0303%;
+    clear: none;
+  }
+  /* line 119, ../sass/_responsive.scss */
+  .col4-set .col-1 {
+    margin-left: 0;
+  }
 }
 @media screen and (min-width: 860px) {
-  /* line 72, /Volumes/Dev/www/_gitrepos/lean/assets/sass/_responsive.scss */
+  /* line 128, ../sass/_responsive.scss */
   .col3-layout .col-wrapper {
     float: left;
-    width: 79.048%;
+    width: 79.04819%;
   }
-  /* line 73, /Volumes/Dev/www/_gitrepos/lean/assets/sass/_responsive.scss */
+  /* line 129, ../sass/_responsive.scss */
   .col3-layout .col-main {
     float: right;
-    width: 74.169%;
+    width: 74.16867%;
   }
-  /* line 75, /Volumes/Dev/www/_gitrepos/lean/assets/sass/_responsive.scss */
+  /* line 131, ../sass/_responsive.scss */
   .col3-layout .col-left,
   .col3-layout .col-right {
     float: left;
-    width: 23.422%;
+    width: 23.42169%;
   }
-  /* line 81, /Volumes/Dev/www/_gitrepos/lean/assets/sass/_responsive.scss */
+  /* line 137, ../sass/_responsive.scss */
   .col3-layout .col-left .left-top,
   .col3-layout .col-left .left-bottom,
   .col3-layout .col-left .right-top,
@@ -355,39 +544,77 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     float: none;
     width: auto;
   }
-  /* line 83, /Volumes/Dev/www/_gitrepos/lean/assets/sass/_responsive.scss */
+  /* line 139, ../sass/_responsive.scss */
   .col3-layout .col-right {
     float: right;
-    width: 18.542%;
+    width: 18.54217%;
   }
 
-  /* line 87, /Volumes/Dev/www/_gitrepos/lean/assets/sass/_responsive.scss */
+  /* line 143, ../sass/_responsive.scss */
   .col2-left-layout .col-main,
   .col2-right-layout .col-main {
-    width: 71.729%;
+    width: 71.72892%;
   }
-  /* line 89, /Volumes/Dev/www/_gitrepos/lean/assets/sass/_responsive.scss */
+  /* line 145, ../sass/_responsive.scss */
   .col2-left-layout .col-left,
   .col2-left-layout .col-right,
   .col2-right-layout .col-left,
   .col2-right-layout .col-right {
-    width: 25.861%;
+    width: 25.86145%;
+  }
+
+  /* line 152, ../sass/_responsive.scss */
+  .col2-set .col-1,
+  .col2-set .col-2 {
+    width: 48.79518%;
+    margin-left: 2.40964%;
+  }
+  /* line 153, ../sass/_responsive.scss */
+  .col2-set .col-1 {
+    margin-left: 0;
+  }
+
+  /* line 158, ../sass/_responsive.scss */
+  .col3-set .col-1,
+  .col3-set .col-2,
+  .col3-set .col-3 {
+    float: left;
+    width: 31.71687%;
+    margin-left: 2.40964%;
+  }
+  /* line 159, ../sass/_responsive.scss */
+  .col3-set .col-1 {
+    margin-left: 0;
+  }
+
+  /* line 165, ../sass/_responsive.scss */
+  .col4-set .col-1,
+  .col4-set .col-2,
+  .col4-set .col-3,
+  .col4-set .col-4 {
+    float: left;
+    width: 22.83614%;
+    margin-left: 2.40964%;
+  }
+  /* line 166, ../sass/_responsive.scss */
+  .col4-set .col-1 {
+    margin-left: 0;
   }
 }
 @media screen and (min-width: 1200px) {
-  /* line 94, /Volumes/Dev/www/_gitrepos/lean/assets/sass/_responsive.scss */
+  /* line 174, ../sass/_responsive.scss */
   .wrapper {
     width: 1170px;
     margin-left: auto;
     margin-right: auto;
   }
 
-  /* line 97, /Volumes/Dev/www/_gitrepos/lean/assets/sass/_responsive.scss */
+  /* line 177, ../sass/_responsive.scss */
   .col2-left-layout .col-main,
   .col2-right-layout .col-main {
     width: 840px;
   }
-  /* line 99, /Volumes/Dev/www/_gitrepos/lean/assets/sass/_responsive.scss */
+  /* line 179, ../sass/_responsive.scss */
   .col2-left-layout .col-left,
   .col2-left-layout .col-right,
   .col2-right-layout .col-left,
@@ -395,17 +622,61 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     width: 310px;
   }
 
-  /* line 102, /Volumes/Dev/www/_gitrepos/lean/assets/sass/_responsive.scss */
+  /* line 182, ../sass/_responsive.scss */
   .col3-layout .col-wrapper {
     width: 945px;
   }
-  /* line 103, /Volumes/Dev/www/_gitrepos/lean/assets/sass/_responsive.scss */
+  /* line 183, ../sass/_responsive.scss */
   .col3-layout .col-main {
     width: 720px;
   }
-  /* line 105, /Volumes/Dev/www/_gitrepos/lean/assets/sass/_responsive.scss */
+  /* line 185, ../sass/_responsive.scss */
   .col3-layout .col-left,
   .col3-layout .col-right {
     width: 205px;
   }
+
+  /* line 192, ../sass/_responsive.scss */
+  .col2-set .col-1,
+  .col2-set .col-2 {
+    width: 49.1453%;
+    margin-left: 1.7094%;
+  }
+  /* line 193, ../sass/_responsive.scss */
+  .col2-set .col-1 {
+    margin-left: 0;
+  }
+
+  /* line 198, ../sass/_responsive.scss */
+  .col3-set .col-1,
+  .col3-set .col-2,
+  .col3-set .col-3 {
+    float: left;
+    width: 32.14103%;
+    margin-left: 1.7094%;
+  }
+  /* line 199, ../sass/_responsive.scss */
+  .col3-set .col-1 {
+    margin-left: 0;
+  }
+
+  /* line 205, ../sass/_responsive.scss */
+  .col4-set .col-1,
+  .col4-set .col-2,
+  .col4-set .col-3,
+  .col4-set .col-4 {
+    float: left;
+    width: 23%;
+    margin-left: 1.7094%;
+  }
+  /* line 206, ../sass/_responsive.scss */
+  .col4-set .col-1 {
+    margin-left: 0;
+  }
 }
+/* ---------------------------------------------------------
+ * This is a custom file for any additional misc or special elements
+ * --------------------------------------------------------- */
+/* ---------------------------------------------------------
+ * Utility classes — Has to be last to override when necessary. Well... almost last
+ * --------------------------------------------------------- */

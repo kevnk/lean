@@ -58,9 +58,3 @@
 // Utility classes — Has to be last to override when necessary. Well... almost last
 // ---------------------------------------------------------
 @import "utilities"; 
-
-
-// ---------------------------------------------------------
-// Client may not be too keen on using sass. Add a css file for them.
-// ---------------------------------------------------------
-@import "../css/client.css";

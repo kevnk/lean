@@ -12,4 +12,9 @@
 
 .col-main,
 .col-left,
-.col-right { width: 100%; }
+.col-right,
+.col2-set,
+.col3-set,
+.col4-set {
+    @include clearfix();
+}

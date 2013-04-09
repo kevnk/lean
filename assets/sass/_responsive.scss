@@ -12,51 +12,83 @@
 // .col-main = device min - 1170px
 
 // @TODO: find out how to put variables in for min width (number plus $outerPadding);
-
-@media screen and (min-width: 350px) {
+$breakpoint: 320;
+@media screen and (min-width: $breakpoint+($outerPadding*2)) {
+    // Layout
+    // --------------------------
     .col3-layout {
         .col-main { width: 100%; }
-        .col-left { @include calcPercentWidthWithMargin(320, 50%); float: left; }
-        .col-right { @include calcPercentWidthWithMargin(320, 50%); float: right; }
+        .col-left { @include calcPercentWidthWithMargin($breakpoint, 50%); float: left; }
+        .col-right { @include calcPercentWidthWithMargin($breakpoint, 50%); float: right; }
+    }
+
+    // Column Sets
+    // --------------------------
+    .col2-set {
+        .col-1,
+        .col-2 { float: left; @include calcPercentWidthWithMargin($breakpoint, 50%); @include calcPercent(margin-left, $breakpoint); }
+        .col-1 { margin-left: 0; }
     }
 }
 
-@media screen and (min-width: 450px) {
+$breakpoint: 420;
+@media screen and (min-width: $breakpoint+($outerPadding*2)) {
+    // Layout
+    // --------------------------
     .col2-left-layout,
     .col2-right-layout {
         .col-left,
         .col-right {
             float: none; 
             .left-top,
-            .right-top { @include calcPercentWidthWithMargin(420, 50%); float: left; }
+            .right-top { @include calcPercentWidthWithMargin($breakpoint, 50%); float: left; }
             .left-bottom,
-            .right-bottom { @include calcPercentWidthWithMargin(420, 50%); float: right; }
+            .right-bottom { @include calcPercentWidthWithMargin($breakpoint, 50%); float: right; }
         }
+    }
+
+    // Column Sets
+    // --------------------------
+    .col2-set {
+        .col-1,
+        .col-2 { @include calcPercentWidthWithMargin($breakpoint, 50%); @include calcPercent(margin-left, $breakpoint); }
+        .col-1 { margin-left: 0; }
+    }
+    .col4-set {
+        .col-1, 
+        .col-2,
+        .col-3,
+        .col-4 { float: left; @include calcPercentWidthWithMargin($breakpoint, 50%); @include calcPercent(margin-left, $breakpoint); }
+        .col-1,
+        .col-3 { margin-left: 0; clear: both; }
     }
 }
 
-@media screen and (min-width: 690px) {
+$breakpoint: 660;
+@media screen and (min-width: $breakpoint+($outerPadding*2)) {
+    // Layout
+    // --------------------------
     .col3-layout {
         .col-main { width:100%;}
         .col-left,
         .col-right {
-            @include calcPercentWidthWithMargin(660, 50%);
+            @include calcPercentWidthWithMargin($breakpoint, 50%);
             .left-top,
-            .right-top { @include calcPercentWidthWithMargin(330, 50%); float: left; }
+            .right-top { @include calcPercentWidthWithMargin($breakpoint/2, 50%); float: left; }
             .left-bottom,
-            .right-bottom { @include calcPercentWidthWithMargin(330, 50%); float: right; }            
+            .right-bottom { @include calcPercentWidthWithMargin($breakpoint/2, 50%); float: right; }            
         }
     }    
     .col2-left-layout,
     .col2-right-layout {
         .col-main { 
             float: right; 
-            @include calcPercentWidthWithMargin(660, 70%)
+            @include calcPercentWidthWithMargin($breakpoint, 70%)
         }
         .col-left,
         .col-right {
             float: left; 
-            @include calcPercentWidthWithMargin(660, 30%);
+            @include calcPercentWidthWithMargin($breakpoint, 30%);
             .left-top,
             .left-bottom,
             .right-top,
@@ -65,33 +97,81 @@
         .col-right { float: right; }
     }
     .col2-right-layout .col-main { float: left; }
+    
+    // Column Sets
+    // --------------------------
+    .col2-set {
+        .col-1,
+        .col-2 { @include calcPercentWidthWithMargin($breakpoint, 50%); @include calcPercent(margin-left, $breakpoint); }
+        .col-1 { margin-left: 0; }
+    }
+    .col3-set {
+        .col-1, 
+        .col-2,
+        .col-3 { float: left; @include calcPercentWidthWithMargin($breakpoint, 32.2%); @include calcPercent(margin-left, $breakpoint); }
+        .col-1 { margin-left: 0; }
+    }    
+    .col4-set {
+        .col-1, 
+        .col-2,
+        .col-3,
+        .col-4 { float: left; @include calcPercentWidthWithMargin($breakpoint, 23.4%); @include calcPercent(margin-left, $breakpoint); clear: none; }
+        .col-1 { margin-left: 0; }
+    }
 }
 
-@media screen and (min-width: 860px) {
+$breakpoint: 830;
+@media screen and (min-width: $breakpoint+($outerPadding*2)) {
+    // Layout
+    // --------------------------
     .col3-layout {
-        .col-wrapper { float: left; @include calcPercentWidthWithMargin(830, 81%); }
-        .col-main { float: right; @include calcPercentWidthWithMargin(830, 76%); }
+        .col-wrapper { float: left; @include calcPercentWidthWithMargin($breakpoint, 81%); }
+        .col-main { float: right; @include calcPercentWidthWithMargin($breakpoint, 76%); }
         .col-left,
         .col-right {
             float: left; 
-            @include calcPercentWidthWithMargin(830, 24%);
+            @include calcPercentWidthWithMargin($breakpoint, 24%);
             .left-top,
             .left-bottom,
             .right-top,
             .right-bottom { float: none; width: auto; }            
         }
-        .col-right { float: right; @include calcPercentWidthWithMargin(830, 19%); }
+        .col-right { float: right; @include calcPercentWidthWithMargin($breakpoint, 19%); }
     }
     .col2-left-layout,
     .col2-right-layout {
-        .col-main { @include calcPercentWidthWithMargin(830, 73.5%); }
+        .col-main { @include calcPercentWidthWithMargin($breakpoint, 73.5%); }
         .col-left,
-        .col-right { @include calcPercentWidthWithMargin(830, 26.5%); }
+        .col-right { @include calcPercentWidthWithMargin($breakpoint, 26.5%); }
+    }
+    
+    // Column Sets
+    // --------------------------
+    .col2-set {
+        .col-1,
+        .col-2 { @include calcPercentWidthWithMargin($breakpoint, 50%); @include calcPercent(margin-left, $breakpoint); }
+        .col-1 { margin-left: 0; }
+    }
+    .col3-set {
+        .col-1, 
+        .col-2,
+        .col-3 { float: left; @include calcPercentWidthWithMargin($breakpoint, 32.5%); @include calcPercent(margin-left, $breakpoint); }
+        .col-1 { margin-left: 0; }
+    }
+    .col4-set {
+        .col-1, 
+        .col-2,
+        .col-3,
+        .col-4 { float: left; @include calcPercentWidthWithMargin($breakpoint, 23.4%); @include calcPercent(margin-left, $breakpoint); }
+        .col-1 { margin-left: 0; }
     }
 }
 
-@media screen and (min-width: 1200px) {
-    .wrapper { width:1170px; margin-left:auto; margin-right:auto;}
+$breakpoint: 1170;
+@media screen and (min-width: $breakpoint+($outerPadding*2)) {
+    // Layout
+    // --------------------------
+    .wrapper { width:#{$breakpoint}px; margin-left:auto; margin-right:auto;}
     .col2-left-layout,
     .col2-right-layout {
         .col-main { width: 840px; }
@@ -103,6 +183,27 @@
         .col-main { width: 720px; }
         .col-left,
         .col-right { width: 205px; }
+    }
+    
+    // Column Sets
+    // --------------------------
+    .col2-set {
+        .col-1,
+        .col-2 { @include calcPercentWidthWithMargin($breakpoint, 50%); @include calcPercent(margin-left, $breakpoint); }
+        .col-1 { margin-left: 0; }
+    }
+    .col3-set {
+        .col-1, 
+        .col-2,
+        .col-3 { float: left; @include calcPercentWidthWithMargin($breakpoint, 32.7%); @include calcPercent(margin-left, $breakpoint); }
+        .col-1 { margin-left: 0; }
+    }
+    .col4-set {
+        .col-1, 
+        .col-2,
+        .col-3,
+        .col-4 { float: left; @include calcPercentWidthWithMargin($breakpoint, 23.4%); @include calcPercent(margin-left, $breakpoint); }
+        .col-1 { margin-left: 0; }
     }
 }
 

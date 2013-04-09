@@ -19,6 +19,7 @@ Spend your time skinning a theme, not *re-skinning* a theme — Use this lightwe
 - Uses rems for font-sizes [(not my idea)](http://snook.ca/archives/html_and_css/font-size-with-rem)
 - Uses baseline grid for vertical alignment of text [(A List Apart's idea)](http://alistapart.com/article/settingtypeontheweb)
 - Uses JS library fallbacks [(a good idea)](http://www.1stwebdesigner.com/design/snippets-html5-boilerplate/)
+- Uses SASS (Requires v3.2)
 
 ### Responsive Setup and Thought Process
 
@@ -35,4 +36,3 @@ See the table below:
 | 1 column | .col-main | 420 - | 1170 | 1170 |
 
 The sidebars are able to stay within a certain range (and not get crazy wide) by splitting them in half (e.g. .left-top and .left-bottom) and distributing them accordingly. So for example, when the browser/device width is at 800px, the 3 column layout has the main content (.col-main) all across the top, and 4 columns under it (.left-top, .left-bottom, .right-top, .right-bottom in order of left to right). When you hit 690px width, the left and right column come back to form 2 columns under the main content.
-
