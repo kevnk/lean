@@ -370,5 +370,17 @@
   }
 }
 
-// Navbar vertical align
+// Layout Calculations
 // -------------------------
+
+@mixin calcPercentWidthWithMargin($containerWidth, $elementWidth) {
+    width: $elementWidth - ($breakpointMarginPx / $containerWidth * $elementWidth); 
+}
+
+
+
+
+
+
+
+

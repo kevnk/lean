@@ -1,50 +1,108 @@
 // _responsive.scss
 
-// NOTE: in 3 column layout, the left and right column get as small as 127px. In other layouts, 194px is the minimum width of left or right column.
+// ###### 3 column layout
+// .col-left and .col-right = 150 (or device min) - 320px
+// .col-main = 420 (or device min) - 720px
+// 
+// ###### 2 columns
+// .col-left and .col-right = 200 (or device min) - 310px
+// .col-main = 420 (or device min) - 840px
+// 
+// ###### 1 column 
+// .col-main = device min - 1170px
 
-@media screen and (min-width: 450px) {
+// @TODO: find out how to put variables in for min width (number plus $outerPadding);
+
+@media screen and (min-width: 350px) {
     .col3-layout {
-        .col-left { float: left; width:48%;}
-        .col-right { float: right; width: 48%; }
+        .col-main { width: 100%; }
+        .col-left { @include calcPercentWidthWithMargin(320, 50%); float: left; }
+        .col-right { @include calcPercentWidthWithMargin(320, 50%); float: right; }
     }
 }
 
-
-@media screen and (min-width: 692px) {
-    // layouts
-    .col-main { float:right; width: 69%; }
-    .col-wrapper { float:left; width: 69%; }
-    .col-left { float:left; width: 29%;}
-    .col-right { float:right; width: 29%; }
-    .col2-right-layout .col-main { float:left; }
-
-    .col1-layout .col-main { width: 100%; }
-    .col3-layout {
-        .col-wrapper { width: 79%; 
-            .col-main { width: 73.5%; }
-            .col-left { width: 24%; }
+@media screen and (min-width: 450px) {
+    .col2-left-layout,
+    .col2-right-layout {
+        .col-left,
+        .col-right {
+            float: none; 
+            .left-top,
+            .right-top { @include calcPercentWidthWithMargin(420, 50%); float: left; }
+            .left-bottom,
+            .right-bottom { @include calcPercentWidthWithMargin(420, 50%); float: right; }
         }
-        .col-right { width: 19%; }
+    }
+}
+
+@media screen and (min-width: 690px) {
+    .col3-layout {
+        .col-main { width:100%;}
+        .col-left,
+        .col-right {
+            @include calcPercentWidthWithMargin(660, 50%);
+            .left-top,
+            .right-top { @include calcPercentWidthWithMargin(330, 50%); float: left; }
+            .left-bottom,
+            .right-bottom { @include calcPercentWidthWithMargin(330, 50%); float: right; }            
+        }
+    }    
+    .col2-left-layout,
+    .col2-right-layout {
+        .col-main { 
+            float: right; 
+            @include calcPercentWidthWithMargin(660, 70%)
+        }
+        .col-left,
+        .col-right {
+            float: left; 
+            @include calcPercentWidthWithMargin(660, 30%);
+            .left-top,
+            .left-bottom,
+            .right-top,
+            .right-bottom { float: none; width: auto; }
+        }
+        .col-right { float: right; }
+    }
+    .col2-right-layout .col-main { float: left; }
+}
+
+@media screen and (min-width: 860px) {
+    .col3-layout {
+        .col-wrapper { float: left; @include calcPercentWidthWithMargin(830, 81%); }
+        .col-main { float: right; @include calcPercentWidthWithMargin(830, 76%); }
+        .col-left,
+        .col-right {
+            float: left; 
+            @include calcPercentWidthWithMargin(830, 24%);
+            .left-top,
+            .left-bottom,
+            .right-top,
+            .right-bottom { float: none; width: auto; }            
+        }
+        .col-right { float: right; @include calcPercentWidthWithMargin(830, 19%); }
+    }
+    .col2-left-layout,
+    .col2-right-layout {
+        .col-main { @include calcPercentWidthWithMargin(830, 73.5%); }
+        .col-left,
+        .col-right { @include calcPercentWidthWithMargin(830, 26.5%); }
     }
 }
 
 @media screen and (min-width: 1200px) {
-    .wrapper { 
-        margin:0 auto;
-        width:1170px;
-    }
+    .wrapper { width:1170px; margin-left:auto; margin-right:auto;}
     .col2-left-layout,
     .col2-right-layout {
-        .col-main { width:800px; }
+        .col-main { width: 840px; }
         .col-left,
-        .col-right { width:350px;}
+        .col-right { width: 310px; }
     }
     .col3-layout {
-        .col-wrapper {
-            width: 890px;
-            .col-main { width: 600px; }
-            .col-left { width: 260px; }
-        }
-        .col-right { width: 260px;}
+        .col-wrapper { width: 945px; }
+        .col-main { width: 720px; }
+        .col-left,
+        .col-right { width: 205px; }
     }
 }
+
