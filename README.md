@@ -29,10 +29,10 @@ See the table below:
 | layout | column class | min width | max width | final width (@media >1200px) |
 |:-------|:-------------|:----------|:----------|:------------|
 | 3 column | .col-left, .col-right | 150 | 320 | 205 |
-|  | .col-main | 420- | 720 | 720 |
+|  | .col-main | 420 - | 720 | 720 |
 | 2 column | .col-left, .col-right | 200 | 320 | 310 |
-|  | .col-main | 420- | 840 | 840 |
-| 1 column | 420- | 1170 | 1170 |
+|  | .col-main | 420 - | 840 | 840 |
+| 1 column | .col-main | 420 - | 1170 | 1170 |
 
 The sidebars are able to stay within a certain range (and not get crazy wide) by splitting them in half (e.g. .left-top and .left-bottom) and distributing them accordingly. So for example, when the browser/device width is at 800px, the 3 column layout has the main content (.col-main) all across the top, and 4 columns under it (.left-top, .left-bottom, .right-top, .right-bottom in order of left to right). When you hit 690px width, the left and right column come back to form 2 columns under the main content.
 
