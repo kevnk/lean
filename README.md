@@ -9,7 +9,8 @@ Spend your time skinning a theme, not *re-skinning* a theme — Use this lightwe
 	- Mobile first and [dynamically add additional content if needed for larger screens](http://adactio.com/journal/5429/)
 	- Use as few dom elements and classes as reasonable to start off with
 2. A Blank base theme so you can spend your time skinning a theme, not *re-skinning* a theme
-3. A Responsive theme (why do anything else anymore?)
+3. A Responsive theme
+	- Responsize for all broswers thanks to the ultra lightweight (1kb), [Respond.js](https://github.com/scottjehl/Respond)
 4. Designer friendly 
 	- Breakpoints before it breaks the design (as opposed to device specific breakpoints) [(Trent Walton's idea)](http://trentwalton.com/2013/02/07/where-to-start/).
 	- Tell designers they have a range for each element so they can plan accordingly, instead of making a new comp for every single breakpoint (see "Responsive Setup and Thought Process" for more on this).

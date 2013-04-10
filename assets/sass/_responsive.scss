@@ -11,6 +11,18 @@
 // ###### 1 column 
 // .col-main = device min - 1170px
 
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-main,
+.col-left,
+.col-right,
+.left-top,
+.left-bottom,
+.right-top,
+.right-bottom { background-color: rgba(0,0,0,.2); }
+
 // @TODO: add column set specifications to the different layouts (have to use number other than breakpoint)
 $currentBreakpoint: 320;
 @media screen and (min-width: $currentBreakpoint+($outerPadding*2)) {
@@ -20,6 +32,14 @@ $currentBreakpoint: 320;
         .col-1,
         .col-2 { float: left; @include set-column-width($currentBreakpoint); @include set-gutter-width($currentBreakpoint);}
         .col-1 { margin-left: 0;}
+    }
+    .col4-set {
+        .col-1,
+        .col-2,
+        .col-3,
+        .col-4 { float: left; @include set-column-width($currentBreakpoint); @include set-gutter-width($currentBreakpoint);}
+        .col-3 { margin-left: 0; clear: both; }
+        .col-1 { margin-left: 0; }
     }
 
     // Layout
@@ -38,6 +58,12 @@ $currentBreakpoint: 420;
     .col2-set { 
         .col-1,
         .col-2 { @include set-column-width($currentBreakpoint); @include set-gutter-width($currentBreakpoint);}
+        .col-1 { margin-left: 0;}
+    }
+    .col3-set {
+        .col-1,
+        .col-2,
+        .col-3 { float: left; @include set-column-width($currentBreakpoint, 0, 1, 3); @include set-gutter-width($currentBreakpoint);}
         .col-1 { margin-left: 0;}
     }
     .col4-set {
@@ -90,17 +116,6 @@ $currentBreakpoint: 660;
 
     // Layout
     // --------------------------
-    .col3-layout {
-        .col-main { width:100%;}
-        .col-left,
-        .col-right {
-            @include set-column-width($currentBreakpoint);
-            .left-top,
-            .right-top { @include set-column-width($currentBreakpoint/2); float: left; }
-            .left-bottom,
-            .right-bottom { @include set-column-width($currentBreakpoint/2); float: right; }            
-        }
-    }    
     .col2-left-layout,
     .col2-right-layout {
         .col-main { 
@@ -117,8 +132,39 @@ $currentBreakpoint: 660;
             .right-bottom { float: none; width: auto; }
         }
         .col-right { float: right; }
+        
+        $colMainWidthNumber: convert-column-percent-to-number($currentBreakpoint, 70%);
+        .col2-set { 
+            .col-1,
+            .col-2 { @include set-column-width($colMainWidthNumber); @include set-gutter-width($colMainWidthNumber); }
+            .col-1 { margin-left: 0; }
+        }
+        .col3-set {
+            .col-1,
+            .col-2,
+            .col-3 { @include set-column-width($colMainWidthNumber, 0, 1, 3); @include set-gutter-width($colMainWidthNumber);}
+            .col-1 { margin-left: 0; }
+        }
+        .col4-set {
+            .col-1,
+            .col-2,
+            .col-3,
+            .col-4 { @include set-column-width($colMainWidthNumber, 0, 1, 4); @include set-gutter-width($colMainWidthNumber);}
+            .col-1 { margin-left: 0; }
+        }
     }
     .col2-right-layout .col-main { float: left; }
+    .col3-layout {
+        .col-main { width:100%;}
+        .col-left,
+        .col-right {
+            @include set-column-width($currentBreakpoint);
+            .left-top,
+            .right-top { @include set-column-width($currentBreakpoint/2); float: left; }
+            .left-bottom,
+            .right-bottom { @include set-column-width($currentBreakpoint/2); float: right; }            
+        }
+    }    
 }
 
 $currentBreakpoint: 830;
@@ -147,9 +193,38 @@ $currentBreakpoint: 830;
 
     // Layout
     // --------------------------
+    .col2-left-layout,
+    .col2-right-layout {
+        $colMainWidth: get-column-width($currentBreakpoint,73.5%);
+        $colAsideWidth: get-column-width($currentBreakpoint,26.5%);
+        .col-main { width: $colMainWidth; }
+        .col-left,
+        .col-right { width: $colAsideWidth; }
+        
+        $colMainWidthNumber: convert-column-percent-to-number($currentBreakpoint, 73.5%);
+        .col2-set { 
+            .col-1,
+            .col-2 { @include set-column-width($colMainWidthNumber); @include set-gutter-width($colMainWidthNumber); }
+            .col-1 { margin-left: 0; }
+        }
+        .col3-set {
+            .col-1,
+            .col-2,
+            .col-3 { @include set-column-width($colMainWidthNumber, 0, 1, 3); @include set-gutter-width($colMainWidthNumber);}
+            .col-1 { margin-left: 0; }
+        }
+        .col4-set {
+            .col-1,
+            .col-2,
+            .col-3,
+            .col-4 { @include set-column-width($colMainWidthNumber, 0, 1, 4); @include set-gutter-width($colMainWidthNumber);}
+            .col-1 { margin-left: 0; }
+        }
+    }
     .col3-layout {
-        .col-wrapper { float: left; @include set-column-width($currentBreakpoint, 81%); }
-        $colMainWidth: calculate-column-width($currentBreakpoint, 76%);
+        $colWrapperWidth: get-column-width($currentBreakpoint, 81%);
+        $colMainWidth: get-column-width($currentBreakpoint, 76%);
+        .col-wrapper { float: left; width: $colWrapperWidth;  }
         .col-main { float: right; width: $colMainWidth;  }
         .col-left,
         .col-right {
@@ -162,36 +237,31 @@ $currentBreakpoint: 830;
         }
         .col-right { float: right; @include set-column-width($currentBreakpoint, 19%); }
         
-        // @TODO: change column wrapper to from %width to px width so these will work
-//        .col2-set { 
-//            .col-1,
-//            .col-2 { @include set-column-width($colMainWidth); @include set-gutter-width($colMainWidth);}
-//            .col-1 { margin-left: 0; }
-//        }
-//        .col3-set {
-//            .col-1,
-//            .col-2,
-//            .col-3 { @include set-column-width($colMainWidth, 0, 1, 3); @include set-gutter-width($colMainWidth);}
-//            .col-1 { margin-left: 0; }
-//        }
-//        .col4-set {
-//            .col-1,
-//            .col-2,
-//            .col-3,
-//            .col-4 { @include set-column-width($colMainWidth, 0, 1, 4); @include set-gutter-width($colMainWidth);}
-//            .col-1 { margin-left: 0; }
-//        }
-    }
-    .col2-left-layout,
-    .col2-right-layout {
-        .col-main { @include set-column-width($currentBreakpoint, 73.5%); }
-        .col-left,
-        .col-right { @include set-column-width($currentBreakpoint, 26.5%); }
+        $colWrapperWidthNumber: convert-column-percent-to-number($currentBreakpoint, $colWrapperWidth);
+        $colMainWidthNumber: convert-column-percent-to-number($colWrapperWidthNumber, 76%);
+        .col2-set { 
+            .col-1,
+            .col-2 { @include set-column-width($colMainWidthNumber); @include set-gutter-width($colMainWidthNumber);}
+            .col-1 { margin-left: 0; }
+        }
+        .col3-set {
+            .col-1,
+            .col-2,
+            .col-3 { @include set-column-width($colMainWidthNumber, 0, 1, 3); @include set-gutter-width($colMainWidthNumber);}
+            .col-1 { margin-left: 0; }
+        }
+        .col4-set {
+            .col-1,
+            .col-2,
+            .col-3,
+            .col-4 { @include set-column-width($colMainWidthNumber, 0, 1, 4); @include set-gutter-width($colMainWidthNumber);}
+            .col-1 { margin-left: 0; }
+        }
     }
 }
-// @TODO: fix tiny glitch where horizontal scrolling shows when screen is around 1190
+
 $currentBreakpoint: 1170;
-@media screen and (min-width: $currentBreakpoint+($outerPadding*2)) {
+@media screen and (min-width: $currentBreakpoint+($outerPadding*2)+20) {
     // Column Sets
     // --------------------------
     .col2-set { 

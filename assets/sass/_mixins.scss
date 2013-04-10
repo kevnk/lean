@@ -4,7 +4,7 @@
 // --------------------------------------------------
 
 @mixin x-rem($property, $value) {
-    #{$property}: $value * ($baselinePx/$baselineRem);
+    #{$property}: #{$value * ($baselinePx/$baselineRem)}px;
     #{$property}: #{$value}rem;
 }
 
@@ -89,18 +89,22 @@
 // Layout Calculations
 // -------------------------
 
+@function strip-units($number) {
+  @return $number / ($number * 0 + 1);
+}
+
 // 
 // @TODO: Add docs to set-column-width!
 //
 @mixin set-column-width($containerWidth, $elWidth:50%, $elColumns:1, $totalColumns:2, $gutterWidth: $gutterWidthPx) {
-    width: calculate-column-width($containerWidth, $elWidth, $elColumns, $totalColumns, $gutterWidth);
+    width: get-column-width($containerWidth, $elWidth, $elColumns, $totalColumns, $gutterWidth);
 }
 // 
-// @TODO: Add docs to calculate-column-width!
+// @TODO: Add docs to get-column-width!
 //
-@function calculate-column-width($containerWidth, $elWidth:50%, $elColumns:1, $totalColumns:2, $gutterWidth:$gutterWidthPx) {
+@function get-column-width($containerWidth, $elWidth:50%, $elColumns:1, $totalColumns:2, $gutterWidth:$gutterWidthPx) {
     // calcuate total margin being used
-    $gutterPercent: $gutterWidth / $containerWidth * 100%;
+    $gutterPercent: get-gutter-width($containerWidth, $gutterWidth); 
     $totalGutterPercent: $gutterPercent * ($totalColumns - 1);
     // distribute the gutter width between each column
     $columnGutterPercent: $totalGutterPercent / $totalColumns;
@@ -115,8 +119,21 @@
     @return $finalWidth;
 }
 // 
+// @TODO: Add docs to convert-column-percent-to-number!
+//
+@function convert-column-percent-to-number($containerWidth, $percent) {
+    $num: $percent / 100 * $containerWidth;
+    @return $num;
+}
+// 
 // @TODO: Add docs to set-gutter-width!
 //
 @mixin set-gutter-width($containerWidth, $property: margin-left, $gutterWidth:$gutterWidthPx) {
-    #{$property}: ($gutterWidth / $containerWidth) * 100%;
+    #{$property}: get-gutter-width($containerWidth, $gutterWidth);
+}
+// 
+// @TODO: Add docs to function-name!
+//
+@function get-gutter-width($containerWidth, $gutterWidth:$gutterWidthPx) {
+    @return strip-units($gutterWidth) / strip-units($containerWidth) * 100%;
 }

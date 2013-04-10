@@ -3,27 +3,27 @@
  *
  * @author Kevin Kirchner, https://github.com/kevinkirchner
  */
-/* line 26, ../sass/_mixins.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Dev\/www\/_gitrepos\/lean\/assets\/sass\/_mixins\.scss}line{font-family:\0000326}}
 .clearfix {
   *zoom: 1;
 }
-/* line 17, ../sass/_mixins.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Dev\/www\/_gitrepos\/lean\/assets\/sass\/_mixins\.scss}line{font-family:\0000317}}
 .clearfix:before, .clearfix:after {
   display: table;
   content: "";
 }
-/* line 21, ../sass/_mixins.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Dev\/www\/_gitrepos\/lean\/assets\/sass\/_mixins\.scss}line{font-family:\0000321}}
 .clearfix:after {
   clear: both;
 }
 
-/* line 5, ../sass/_reset.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Dev\/www\/_gitrepos\/lean\/assets\/sass\/_reset\.scss}line{font-family:\000035}}
 * {
   margin: 0;
   padding: 0;
 }
 
-/* line 19, ../sass/_reset.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Dev\/www\/_gitrepos\/lean\/assets\/sass\/_reset\.scss}line{font-family:\0000319}}
 article,
 aside,
 details,
@@ -37,7 +37,7 @@ section {
   display: block;
 }
 
-/* line 28, ../sass/_reset.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Dev\/www\/_gitrepos\/lean\/assets\/sass\/_reset\.scss}line{font-family:\0000328}}
 audio,
 canvas,
 video {
@@ -46,25 +46,25 @@ video {
   *zoom: 1;
 }
 
-/* line 37, ../sass/_reset.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Dev\/www\/_gitrepos\/lean\/assets\/sass\/_reset\.scss}line{font-family:\0000337}}
 audio:not([controls]) {
   display: none;
 }
 
-/* line 45, ../sass/_reset.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Dev\/www\/_gitrepos\/lean\/assets\/sass\/_reset\.scss}line{font-family:\0000345}}
 a:focus {
   outline: thin dotted #333;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
 
-/* line 50, ../sass/_reset.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Dev\/www\/_gitrepos\/lean\/assets\/sass\/_reset\.scss}line{font-family:\0000350}}
 a:hover,
 a:active {
   outline: 0;
 }
 
-/* line 58, ../sass/_reset.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Dev\/www\/_gitrepos\/lean\/assets\/sass\/_reset\.scss}line{font-family:\0000358}}
 sub,
 sup {
   position: relative;
@@ -73,17 +73,17 @@ sup {
   vertical-align: baseline;
 }
 
-/* line 64, ../sass/_reset.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Dev\/www\/_gitrepos\/lean\/assets\/sass\/_reset\.scss}line{font-family:\0000364}}
 sup {
   top: -0.5em;
 }
 
-/* line 67, ../sass/_reset.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Dev\/www\/_gitrepos\/lean\/assets\/sass\/_reset\.scss}line{font-family:\0000367}}
 sub {
   bottom: -0.25em;
 }
 
-/* line 74, ../sass/_reset.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Dev\/www\/_gitrepos\/lean\/assets\/sass\/_reset\.scss}line{font-family:\0000374}}
 img {
   max-width: 100%;
   height: auto;
@@ -92,18 +92,18 @@ img {
   -ms-interpolation-mode: bicubic;
 }
 
-/* line 83, ../sass/_reset.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Dev\/www\/_gitrepos\/lean\/assets\/sass\/_reset\.scss}line{font-family:\0000383}}
 #mapCanvas label {
   width: auto;
   display: inline;
 }
 
-/* line 84, ../sass/_reset.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Dev\/www\/_gitrepos\/lean\/assets\/sass\/_reset\.scss}line{font-family:\0000384}}
 #mapCanvas img {
   max-width: none;
 }
 
-/* line 93, ../sass/_reset.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Dev\/www\/_gitrepos\/lean\/assets\/sass\/_reset\.scss}line{font-family:\0000393}}
 button,
 input,
 select,
@@ -113,21 +113,21 @@ textarea {
   vertical-align: middle;
 }
 
-/* line 99, ../sass/_reset.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Dev\/www\/_gitrepos\/lean\/assets\/sass\/_reset\.scss}line{font-family:\0000399}}
 button,
 input {
   *overflow: visible;
   line-height: normal;
 }
 
-/* line 104, ../sass/_reset.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Dev\/www\/_gitrepos\/lean\/assets\/sass\/_reset\.scss}line{font-family:\00003104}}
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   padding: 0;
   border: 0;
 }
 
-/* line 111, ../sass/_reset.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Dev\/www\/_gitrepos\/lean\/assets\/sass\/_reset\.scss}line{font-family:\00003111}}
 button,
 input[type="button"],
 input[type="reset"],
@@ -136,7 +136,7 @@ input[type="submit"] {
   -webkit-appearance: button;
 }
 
-/* line 115, ../sass/_reset.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Dev\/www\/_gitrepos\/lean\/assets\/sass\/_reset\.scss}line{font-family:\00003115}}
 input[type="search"] {
   -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
@@ -144,25 +144,25 @@ input[type="search"] {
   -webkit-appearance: textfield;
 }
 
-/* line 122, ../sass/_reset.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Dev\/www\/_gitrepos\/lean\/assets\/sass\/_reset\.scss}line{font-family:\00003122}}
 input[type="search"]::-webkit-search-decoration,
 input[type="search"]::-webkit-search-cancel-button {
   -webkit-appearance: none;
 }
 
-/* line 125, ../sass/_reset.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Dev\/www\/_gitrepos\/lean\/assets\/sass\/_reset\.scss}line{font-family:\00003125}}
 textarea {
   overflow: auto;
   vertical-align: top;
 }
 
-/* line 8, ../sass/_layouts.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Dev\/www\/_gitrepos\/lean\/assets\/sass\/_layouts\.scss}line{font-family:\000038}}
 .wrapper {
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
-/* line 18, ../sass/_layouts.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Dev\/www\/_gitrepos\/lean\/assets\/sass\/_layouts\.scss}line{font-family:\0000318}}
 .col-main,
 .col-left,
 .col-right,
@@ -171,7 +171,7 @@ textarea {
 .col4-set {
   *zoom: 1;
 }
-/* line 17, ../sass/_mixins.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Dev\/www\/_gitrepos\/lean\/assets\/sass\/_mixins\.scss}line{font-family:\0000317}}
 .col-main:before, .col-main:after,
 .col-left:before,
 .col-left:after,
@@ -186,7 +186,7 @@ textarea {
   display: table;
   content: "";
 }
-/* line 21, ../sass/_mixins.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Dev\/www\/_gitrepos\/lean\/assets\/sass\/_mixins\.scss}line{font-family:\0000321}}
 .col-main:after,
 .col-left:after,
 .col-right:after,
@@ -196,25 +196,25 @@ textarea {
   clear: both;
 }
 
-/* line 4, ../sass/_typography.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Dev\/www\/_gitrepos\/lean\/assets\/sass\/_typography\.scss}line{font-family:\000034}}
 html {
   font-size: 62.5%;
   -webkit-text-size-adjust: 62.5%;
   -ms-text-size-adjust: 62.5%;
 }
 
-/* line 9, ../sass/_typography.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Dev\/www\/_gitrepos\/lean\/assets\/sass\/_typography\.scss}line{font-family:\000039}}
 body {
-  font-size: 16;
+  font-size: 16px;
   font-size: 1.6rem;
-  line-height: 24;
+  line-height: 24px;
   line-height: 2.4rem;
   font-family: Helvetica, Arial, sans-serif;
 }
 
-/* line 11, ../sass/_typography.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Dev\/www\/_gitrepos\/lean\/assets\/sass\/_typography\.scss}line{font-family:\0000311}}
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-  line-height: 48;
+  line-height: 48px;
   line-height: 4.8rem;
 }
 
@@ -222,47 +222,94 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 /* _navs.scss */
 /* _cms_home.scss */
 /* _cart.scss */
-@media screen and (min-width: 350px) {
-  /* line 21, ../sass/_responsive.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Dev\/www\/_gitrepos\/lean\/assets\/sass\/_responsive\.scss}line{font-family:\0000324}}
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-main,
+.col-left,
+.col-right,
+.left-top,
+.left-bottom,
+.right-top,
+.right-bottom {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (min-width: 340px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Dev\/www\/_gitrepos\/lean\/assets\/sass\/_responsive\.scss}line{font-family:\0000333}}
   .col2-set .col-1,
   .col2-set .col-2 {
     float: left;
     width: 46.875%;
     margin-left: 6.25%;
   }
-  /* line 22, ../sass/_responsive.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Dev\/www\/_gitrepos\/lean\/assets\/sass\/_responsive\.scss}line{font-family:\0000334}}
   .col2-set .col-1 {
     margin-left: 0;
   }
 
-  /* line 28, ../sass/_responsive.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Dev\/www\/_gitrepos\/lean\/assets\/sass\/_responsive\.scss}line{font-family:\0000340}}
+  .col4-set .col-1,
+  .col4-set .col-2,
+  .col4-set .col-3,
+  .col4-set .col-4 {
+    float: left;
+    width: 46.875%;
+    margin-left: 6.25%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Dev\/www\/_gitrepos\/lean\/assets\/sass\/_responsive\.scss}line{font-family:\0000341}}
+  .col4-set .col-3 {
+    margin-left: 0;
+    clear: both;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Dev\/www\/_gitrepos\/lean\/assets\/sass\/_responsive\.scss}line{font-family:\0000342}}
+  .col4-set .col-1 {
+    margin-left: 0;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Dev\/www\/_gitrepos\/lean\/assets\/sass\/_responsive\.scss}line{font-family:\0000348}}
   .col3-layout .col-main {
     width: 100%;
   }
-  /* line 29, ../sass/_responsive.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Dev\/www\/_gitrepos\/lean\/assets\/sass\/_responsive\.scss}line{font-family:\0000349}}
   .col3-layout .col-left {
     width: 46.875%;
     float: left;
   }
-  /* line 30, ../sass/_responsive.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Dev\/www\/_gitrepos\/lean\/assets\/sass\/_responsive\.scss}line{font-family:\0000350}}
   .col3-layout .col-right {
     width: 46.875%;
     float: right;
   }
 }
-@media screen and (min-width: 450px) {
-  /* line 40, ../sass/_responsive.scss */
+@media screen and (min-width: 440px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Dev\/www\/_gitrepos\/lean\/assets\/sass\/_responsive\.scss}line{font-family:\0000360}}
   .col2-set .col-1,
   .col2-set .col-2 {
     width: 47.61905%;
     margin-left: 4.7619%;
   }
-  /* line 41, ../sass/_responsive.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Dev\/www\/_gitrepos\/lean\/assets\/sass\/_responsive\.scss}line{font-family:\0000361}}
   .col2-set .col-1 {
     margin-left: 0;
   }
 
-  /* line 47, ../sass/_responsive.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Dev\/www\/_gitrepos\/lean\/assets\/sass\/_responsive\.scss}line{font-family:\0000366}}
+  .col3-set .col-1,
+  .col3-set .col-2,
+  .col3-set .col-3 {
+    float: left;
+    width: 30.15873%;
+    margin-left: 4.7619%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Dev\/www\/_gitrepos\/lean\/assets\/sass\/_responsive\.scss}line{font-family:\0000367}}
+  .col3-set .col-1 {
+    margin-left: 0;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Dev\/www\/_gitrepos\/lean\/assets\/sass\/_responsive\.scss}line{font-family:\0000373}}
   .col4-set .col-1,
   .col4-set .col-2,
   .col4-set .col-3,
@@ -271,24 +318,24 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     width: 47.61905%;
     margin-left: 4.7619%;
   }
-  /* line 48, ../sass/_responsive.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Dev\/www\/_gitrepos\/lean\/assets\/sass\/_responsive\.scss}line{font-family:\0000374}}
   .col4-set .col-3 {
     margin-left: 0;
     clear: both;
   }
-  /* line 49, ../sass/_responsive.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Dev\/www\/_gitrepos\/lean\/assets\/sass\/_responsive\.scss}line{font-family:\0000375}}
   .col4-set .col-1 {
     margin-left: 0;
   }
 
-  /* line 57, ../sass/_responsive.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Dev\/www\/_gitrepos\/lean\/assets\/sass\/_responsive\.scss}line{font-family:\0000383}}
   .col2-left-layout .col-left,
   .col2-left-layout .col-right,
   .col2-right-layout .col-left,
   .col2-right-layout .col-right {
     float: none;
   }
-  /* line 60, ../sass/_responsive.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Dev\/www\/_gitrepos\/lean\/assets\/sass\/_responsive\.scss}line{font-family:\0000386}}
   .col2-left-layout .col-left .left-top,
   .col2-left-layout .col-left .right-top,
   .col2-left-layout .col-right .left-top,
@@ -300,7 +347,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     width: 47.61905%;
     float: left;
   }
-  /* line 62, ../sass/_responsive.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Dev\/www\/_gitrepos\/lean\/assets\/sass\/_responsive\.scss}line{font-family:\0000388}}
   .col2-left-layout .col-left .left-bottom,
   .col2-left-layout .col-left .right-bottom,
   .col2-left-layout .col-right .left-bottom,
@@ -313,19 +360,19 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     float: right;
   }
 }
-@media screen and (min-width: 690px) {
-  /* line 73, ../sass/_responsive.scss */
+@media screen and (min-width: 680px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Dev\/www\/_gitrepos\/lean\/assets\/sass\/_responsive\.scss}line{font-family:\0000399}}
   .col2-set .col-1,
   .col2-set .col-2 {
     width: 48.48485%;
     margin-left: 3.0303%;
   }
-  /* line 74, ../sass/_responsive.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Dev\/www\/_gitrepos\/lean\/assets\/sass\/_responsive\.scss}line{font-family:\00003100}}
   .col2-set .col-1 {
     margin-left: 0;
   }
 
-  /* line 79, ../sass/_responsive.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Dev\/www\/_gitrepos\/lean\/assets\/sass\/_responsive\.scss}line{font-family:\00003105}}
   .col3-set .col-1,
   .col3-set .col-2,
   .col3-set .col-3 {
@@ -333,12 +380,12 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     width: 31.31313%;
     margin-left: 3.0303%;
   }
-  /* line 80, ../sass/_responsive.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Dev\/www\/_gitrepos\/lean\/assets\/sass\/_responsive\.scss}line{font-family:\00003106}}
   .col3-set .col-1 {
     margin-left: 0;
   }
 
-  /* line 86, ../sass/_responsive.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Dev\/www\/_gitrepos\/lean\/assets\/sass\/_responsive\.scss}line{font-family:\00003112}}
   .col4-set .col-1,
   .col4-set .col-2,
   .col4-set .col-3,
@@ -346,48 +393,22 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     width: 22.72727%;
     margin-left: 3.0303%;
   }
-  /* line 87, ../sass/_responsive.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Dev\/www\/_gitrepos\/lean\/assets\/sass\/_responsive\.scss}line{font-family:\00003113}}
   .col4-set .col-3 {
     clear: none;
   }
-  /* line 88, ../sass/_responsive.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Dev\/www\/_gitrepos\/lean\/assets\/sass\/_responsive\.scss}line{font-family:\00003114}}
   .col4-set .col-1 {
     margin-left: 0;
   }
 
-  /* line 94, ../sass/_responsive.scss */
-  .col3-layout .col-main {
-    width: 100%;
-  }
-  /* line 96, ../sass/_responsive.scss */
-  .col3-layout .col-left,
-  .col3-layout .col-right {
-    width: 48.48485%;
-  }
-  /* line 99, ../sass/_responsive.scss */
-  .col3-layout .col-left .left-top,
-  .col3-layout .col-left .right-top,
-  .col3-layout .col-right .left-top,
-  .col3-layout .col-right .right-top {
-    width: 46.9697%;
-    float: left;
-  }
-  /* line 101, ../sass/_responsive.scss */
-  .col3-layout .col-left .left-bottom,
-  .col3-layout .col-left .right-bottom,
-  .col3-layout .col-right .left-bottom,
-  .col3-layout .col-right .right-bottom {
-    width: 46.9697%;
-    float: right;
-  }
-
-  /* line 106, ../sass/_responsive.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Dev\/www\/_gitrepos\/lean\/assets\/sass\/_responsive\.scss}line{font-family:\00003121}}
   .col2-left-layout .col-main,
   .col2-right-layout .col-main {
     float: right;
     width: 68.48485%;
   }
-  /* line 111, ../sass/_responsive.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Dev\/www\/_gitrepos\/lean\/assets\/sass\/_responsive\.scss}line{font-family:\00003126}}
   .col2-left-layout .col-left,
   .col2-left-layout .col-right,
   .col2-right-layout .col-left,
@@ -395,7 +416,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     float: left;
     width: 28.48485%;
   }
-  /* line 117, ../sass/_responsive.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Dev\/www\/_gitrepos\/lean\/assets\/sass\/_responsive\.scss}line{font-family:\00003132}}
   .col2-left-layout .col-left .left-top,
   .col2-left-layout .col-left .left-bottom,
   .col2-left-layout .col-left .right-top,
@@ -415,42 +436,113 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     float: none;
     width: auto;
   }
-  /* line 119, ../sass/_responsive.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Dev\/www\/_gitrepos\/lean\/assets\/sass\/_responsive\.scss}line{font-family:\00003134}}
   .col2-left-layout .col-right,
   .col2-right-layout .col-right {
     float: right;
   }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Dev\/www\/_gitrepos\/lean\/assets\/sass\/_responsive\.scss}line{font-family:\00003139}}
+  .col2-left-layout .col2-set .col-1,
+  .col2-left-layout .col2-set .col-2,
+  .col2-right-layout .col2-set .col-1,
+  .col2-right-layout .col2-set .col-2 {
+    width: 47.8355%;
+    margin-left: 4.329%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Dev\/www\/_gitrepos\/lean\/assets\/sass\/_responsive\.scss}line{font-family:\00003140}}
+  .col2-left-layout .col2-set .col-1,
+  .col2-right-layout .col2-set .col-1 {
+    margin-left: 0;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Dev\/www\/_gitrepos\/lean\/assets\/sass\/_responsive\.scss}line{font-family:\00003145}}
+  .col2-left-layout .col3-set .col-1,
+  .col2-left-layout .col3-set .col-2,
+  .col2-left-layout .col3-set .col-3,
+  .col2-right-layout .col3-set .col-1,
+  .col2-right-layout .col3-set .col-2,
+  .col2-right-layout .col3-set .col-3 {
+    width: 30.44733%;
+    margin-left: 4.329%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Dev\/www\/_gitrepos\/lean\/assets\/sass\/_responsive\.scss}line{font-family:\00003146}}
+  .col2-left-layout .col3-set .col-1,
+  .col2-right-layout .col3-set .col-1 {
+    margin-left: 0;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Dev\/www\/_gitrepos\/lean\/assets\/sass\/_responsive\.scss}line{font-family:\00003152}}
+  .col2-left-layout .col4-set .col-1,
+  .col2-left-layout .col4-set .col-2,
+  .col2-left-layout .col4-set .col-3,
+  .col2-left-layout .col4-set .col-4,
+  .col2-right-layout .col4-set .col-1,
+  .col2-right-layout .col4-set .col-2,
+  .col2-right-layout .col4-set .col-3,
+  .col2-right-layout .col4-set .col-4 {
+    width: 21.75325%;
+    margin-left: 4.329%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Dev\/www\/_gitrepos\/lean\/assets\/sass\/_responsive\.scss}line{font-family:\00003153}}
+  .col2-left-layout .col4-set .col-1,
+  .col2-right-layout .col4-set .col-1 {
+    margin-left: 0;
+  }
 
-  /* line 121, ../sass/_responsive.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Dev\/www\/_gitrepos\/lean\/assets\/sass\/_responsive\.scss}line{font-family:\00003156}}
   .col2-right-layout .col-main {
     float: left;
   }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Dev\/www\/_gitrepos\/lean\/assets\/sass\/_responsive\.scss}line{font-family:\00003158}}
+  .col3-layout .col-main {
+    width: 100%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Dev\/www\/_gitrepos\/lean\/assets\/sass\/_responsive\.scss}line{font-family:\00003160}}
+  .col3-layout .col-left,
+  .col3-layout .col-right {
+    width: 48.48485%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Dev\/www\/_gitrepos\/lean\/assets\/sass\/_responsive\.scss}line{font-family:\00003163}}
+  .col3-layout .col-left .left-top,
+  .col3-layout .col-left .right-top,
+  .col3-layout .col-right .left-top,
+  .col3-layout .col-right .right-top {
+    width: 46.9697%;
+    float: left;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Dev\/www\/_gitrepos\/lean\/assets\/sass\/_responsive\.scss}line{font-family:\00003165}}
+  .col3-layout .col-left .left-bottom,
+  .col3-layout .col-left .right-bottom,
+  .col3-layout .col-right .left-bottom,
+  .col3-layout .col-right .right-bottom {
+    width: 46.9697%;
+    float: right;
+  }
 }
-@media screen and (min-width: 860px) {
-  /* line 130, ../sass/_responsive.scss */
+@media screen and (min-width: 850px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Dev\/www\/_gitrepos\/lean\/assets\/sass\/_responsive\.scss}line{font-family:\00003176}}
   .col2-set .col-1,
   .col2-set .col-2 {
     width: 48.79518%;
     margin-left: 2.40964%;
   }
-  /* line 131, ../sass/_responsive.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Dev\/www\/_gitrepos\/lean\/assets\/sass\/_responsive\.scss}line{font-family:\00003177}}
   .col2-set .col-1 {
     margin-left: 0;
   }
 
-  /* line 136, ../sass/_responsive.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Dev\/www\/_gitrepos\/lean\/assets\/sass\/_responsive\.scss}line{font-family:\00003182}}
   .col3-set .col-1,
   .col3-set .col-2,
   .col3-set .col-3 {
     width: 31.72691%;
     margin-left: 2.40964%;
   }
-  /* line 137, ../sass/_responsive.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Dev\/www\/_gitrepos\/lean\/assets\/sass\/_responsive\.scss}line{font-family:\00003183}}
   .col3-set .col-1 {
     margin-left: 0;
   }
 
-  /* line 143, ../sass/_responsive.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Dev\/www\/_gitrepos\/lean\/assets\/sass\/_responsive\.scss}line{font-family:\00003189}}
   .col4-set .col-1,
   .col4-set .col-2,
   .col4-set .col-3,
@@ -458,32 +550,90 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     width: 23.19277%;
     margin-left: 2.40964%;
   }
-  /* line 144, ../sass/_responsive.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Dev\/www\/_gitrepos\/lean\/assets\/sass\/_responsive\.scss}line{font-family:\00003190}}
   .col4-set .col-3 {
     clear: none;
   }
-  /* line 145, ../sass/_responsive.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Dev\/www\/_gitrepos\/lean\/assets\/sass\/_responsive\.scss}line{font-family:\00003191}}
   .col4-set .col-1 {
     margin-left: 0;
   }
 
-  /* line 151, ../sass/_responsive.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Dev\/www\/_gitrepos\/lean\/assets\/sass\/_responsive\.scss}line{font-family:\00003200}}
+  .col2-left-layout .col-main,
+  .col2-right-layout .col-main {
+    width: 72.29518%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Dev\/www\/_gitrepos\/lean\/assets\/sass\/_responsive\.scss}line{font-family:\00003202}}
+  .col2-left-layout .col-left,
+  .col2-left-layout .col-right,
+  .col2-right-layout .col-left,
+  .col2-right-layout .col-right {
+    width: 25.29518%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Dev\/www\/_gitrepos\/lean\/assets\/sass\/_responsive\.scss}line{font-family:\00003207}}
+  .col2-left-layout .col2-set .col-1,
+  .col2-left-layout .col2-set .col-2,
+  .col2-right-layout .col2-set .col-1,
+  .col2-right-layout .col2-set .col-2 {
+    width: 48.36079%;
+    margin-left: 3.27842%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Dev\/www\/_gitrepos\/lean\/assets\/sass\/_responsive\.scss}line{font-family:\00003208}}
+  .col2-left-layout .col2-set .col-1,
+  .col2-right-layout .col2-set .col-1 {
+    margin-left: 0;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Dev\/www\/_gitrepos\/lean\/assets\/sass\/_responsive\.scss}line{font-family:\00003213}}
+  .col2-left-layout .col3-set .col-1,
+  .col2-left-layout .col3-set .col-2,
+  .col2-left-layout .col3-set .col-3,
+  .col2-right-layout .col3-set .col-1,
+  .col2-right-layout .col3-set .col-2,
+  .col2-right-layout .col3-set .col-3 {
+    width: 31.14772%;
+    margin-left: 3.27842%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Dev\/www\/_gitrepos\/lean\/assets\/sass\/_responsive\.scss}line{font-family:\00003214}}
+  .col2-left-layout .col3-set .col-1,
+  .col2-right-layout .col3-set .col-1 {
+    margin-left: 0;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Dev\/www\/_gitrepos\/lean\/assets\/sass\/_responsive\.scss}line{font-family:\00003220}}
+  .col2-left-layout .col4-set .col-1,
+  .col2-left-layout .col4-set .col-2,
+  .col2-left-layout .col4-set .col-3,
+  .col2-left-layout .col4-set .col-4,
+  .col2-right-layout .col4-set .col-1,
+  .col2-right-layout .col4-set .col-2,
+  .col2-right-layout .col4-set .col-3,
+  .col2-right-layout .col4-set .col-4 {
+    width: 22.54119%;
+    margin-left: 3.27842%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Dev\/www\/_gitrepos\/lean\/assets\/sass\/_responsive\.scss}line{font-family:\00003221}}
+  .col2-left-layout .col4-set .col-1,
+  .col2-right-layout .col4-set .col-1 {
+    margin-left: 0;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Dev\/www\/_gitrepos\/lean\/assets\/sass\/_responsive\.scss}line{font-family:\00003227}}
   .col3-layout .col-wrapper {
     float: left;
     width: 79.79518%;
   }
-  /* line 153, ../sass/_responsive.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Dev\/www\/_gitrepos\/lean\/assets\/sass\/_responsive\.scss}line{font-family:\00003228}}
   .col3-layout .col-main {
     float: right;
     width: 74.79518%;
   }
-  /* line 155, ../sass/_responsive.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Dev\/www\/_gitrepos\/lean\/assets\/sass\/_responsive\.scss}line{font-family:\00003230}}
   .col3-layout .col-left,
   .col3-layout .col-right {
     float: left;
     width: 22.79518%;
   }
-  /* line 161, ../sass/_responsive.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Dev\/www\/_gitrepos\/lean\/assets\/sass\/_responsive\.scss}line{font-family:\00003236}}
   .col3-layout .col-left .left-top,
   .col3-layout .col-left .left-bottom,
   .col3-layout .col-left .right-top,
@@ -495,50 +645,70 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     float: none;
     width: auto;
   }
-  /* line 163, ../sass/_responsive.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Dev\/www\/_gitrepos\/lean\/assets\/sass\/_responsive\.scss}line{font-family:\00003238}}
   .col3-layout .col-right {
     float: right;
     width: 17.79518%;
   }
-
-  /* line 187, ../sass/_responsive.scss */
-  .col2-left-layout .col-main,
-  .col2-right-layout .col-main {
-    width: 72.29518%;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Dev\/www\/_gitrepos\/lean\/assets\/sass\/_responsive\.scss}line{font-family:\00003244}}
+  .col3-layout .col2-set .col-1,
+  .col3-layout .col2-set .col-2 {
+    width: 48.0133%;
+    margin-left: 3.97339%;
   }
-  /* line 189, ../sass/_responsive.scss */
-  .col2-left-layout .col-left,
-  .col2-left-layout .col-right,
-  .col2-right-layout .col-left,
-  .col2-right-layout .col-right {
-    width: 25.29518%;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Dev\/www\/_gitrepos\/lean\/assets\/sass\/_responsive\.scss}line{font-family:\00003245}}
+  .col3-layout .col2-set .col-1 {
+    margin-left: 0;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Dev\/www\/_gitrepos\/lean\/assets\/sass\/_responsive\.scss}line{font-family:\00003250}}
+  .col3-layout .col3-set .col-1,
+  .col3-layout .col3-set .col-2,
+  .col3-layout .col3-set .col-3 {
+    width: 30.6844%;
+    margin-left: 3.97339%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Dev\/www\/_gitrepos\/lean\/assets\/sass\/_responsive\.scss}line{font-family:\00003251}}
+  .col3-layout .col3-set .col-1 {
+    margin-left: 0;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Dev\/www\/_gitrepos\/lean\/assets\/sass\/_responsive\.scss}line{font-family:\00003257}}
+  .col3-layout .col4-set .col-1,
+  .col3-layout .col4-set .col-2,
+  .col3-layout .col4-set .col-3,
+  .col3-layout .col4-set .col-4 {
+    width: 22.01995%;
+    margin-left: 3.97339%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Dev\/www\/_gitrepos\/lean\/assets\/sass\/_responsive\.scss}line{font-family:\00003258}}
+  .col3-layout .col4-set .col-1 {
+    margin-left: 0;
   }
 }
-@media screen and (min-width: 1200px) {
-  /* line 199, ../sass/_responsive.scss */
+@media screen and (min-width: 1210px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Dev\/www\/_gitrepos\/lean\/assets\/sass\/_responsive\.scss}line{font-family:\00003269}}
   .col2-set .col-1,
   .col2-set .col-2 {
     width: 49.1453%;
     margin-left: 1.7094%;
   }
-  /* line 200, ../sass/_responsive.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Dev\/www\/_gitrepos\/lean\/assets\/sass\/_responsive\.scss}line{font-family:\00003270}}
   .col2-set .col-1 {
     margin-left: 0;
   }
 
-  /* line 205, ../sass/_responsive.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Dev\/www\/_gitrepos\/lean\/assets\/sass\/_responsive\.scss}line{font-family:\00003275}}
   .col3-set .col-1,
   .col3-set .col-2,
   .col3-set .col-3 {
     width: 32.19373%;
     margin-left: 1.7094%;
   }
-  /* line 206, ../sass/_responsive.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Dev\/www\/_gitrepos\/lean\/assets\/sass\/_responsive\.scss}line{font-family:\00003276}}
   .col3-set .col-1 {
     margin-left: 0;
   }
 
-  /* line 212, ../sass/_responsive.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Dev\/www\/_gitrepos\/lean\/assets\/sass\/_responsive\.scss}line{font-family:\00003282}}
   .col4-set .col-1,
   .col4-set .col-2,
   .col4-set .col-3,
@@ -546,28 +716,28 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     width: 23.71795%;
     margin-left: 1.7094%;
   }
-  /* line 213, ../sass/_responsive.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Dev\/www\/_gitrepos\/lean\/assets\/sass\/_responsive\.scss}line{font-family:\00003283}}
   .col4-set .col-3 {
     clear: none;
   }
-  /* line 214, ../sass/_responsive.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Dev\/www\/_gitrepos\/lean\/assets\/sass\/_responsive\.scss}line{font-family:\00003284}}
   .col4-set .col-1 {
     margin-left: 0;
   }
 
-  /* line 219, ../sass/_responsive.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Dev\/www\/_gitrepos\/lean\/assets\/sass\/_responsive\.scss}line{font-family:\00003289}}
   .wrapper {
     width: 1170px;
     margin-left: auto;
     margin-right: auto;
   }
 
-  /* line 222, ../sass/_responsive.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Dev\/www\/_gitrepos\/lean\/assets\/sass\/_responsive\.scss}line{font-family:\00003292}}
   .col2-left-layout .col-main,
   .col2-right-layout .col-main {
     width: 840px;
   }
-  /* line 224, ../sass/_responsive.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Dev\/www\/_gitrepos\/lean\/assets\/sass\/_responsive\.scss}line{font-family:\00003294}}
   .col2-left-layout .col-left,
   .col2-left-layout .col-right,
   .col2-right-layout .col-left,
@@ -575,41 +745,41 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     width: 310px;
   }
 
-  /* line 227, ../sass/_responsive.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Dev\/www\/_gitrepos\/lean\/assets\/sass\/_responsive\.scss}line{font-family:\00003297}}
   .col3-layout .col-wrapper {
     width: 945px;
   }
-  /* line 228, ../sass/_responsive.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Dev\/www\/_gitrepos\/lean\/assets\/sass\/_responsive\.scss}line{font-family:\00003298}}
   .col3-layout .col-main {
     width: 720px;
   }
-  /* line 230, ../sass/_responsive.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Dev\/www\/_gitrepos\/lean\/assets\/sass\/_responsive\.scss}line{font-family:\00003300}}
   .col3-layout .col-left,
   .col3-layout .col-right {
     width: 205px;
   }
-  /* line 234, ../sass/_responsive.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Dev\/www\/_gitrepos\/lean\/assets\/sass\/_responsive\.scss}line{font-family:\00003304}}
   .col3-layout .col2-set .col-1,
   .col3-layout .col2-set .col-2 {
     width: 48.61111%;
     margin-left: 2.77778%;
   }
-  /* line 235, ../sass/_responsive.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Dev\/www\/_gitrepos\/lean\/assets\/sass\/_responsive\.scss}line{font-family:\00003305}}
   .col3-layout .col2-set .col-1 {
     margin-left: 0;
   }
-  /* line 240, ../sass/_responsive.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Dev\/www\/_gitrepos\/lean\/assets\/sass\/_responsive\.scss}line{font-family:\00003310}}
   .col3-layout .col3-set .col-1,
   .col3-layout .col3-set .col-2,
   .col3-layout .col3-set .col-3 {
     width: 31.48148%;
     margin-left: 2.77778%;
   }
-  /* line 241, ../sass/_responsive.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Dev\/www\/_gitrepos\/lean\/assets\/sass\/_responsive\.scss}line{font-family:\00003311}}
   .col3-layout .col3-set .col-1 {
     margin-left: 0;
   }
-  /* line 247, ../sass/_responsive.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Dev\/www\/_gitrepos\/lean\/assets\/sass\/_responsive\.scss}line{font-family:\00003317}}
   .col3-layout .col4-set .col-1,
   .col3-layout .col4-set .col-2,
   .col3-layout .col4-set .col-3,
@@ -617,7 +787,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     width: 22.91667%;
     margin-left: 2.77778%;
   }
-  /* line 248, ../sass/_responsive.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Dev\/www\/_gitrepos\/lean\/assets\/sass\/_responsive\.scss}line{font-family:\00003318}}
   .col3-layout .col4-set .col-1 {
     margin-left: 0;
   }
