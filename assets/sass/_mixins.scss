@@ -89,17 +89,34 @@
 // Layout Calculations
 // -------------------------
 
-// @TODO: fix this function so it will work with column sets
-@mixin calcPercentWidthWithMargin($containerWidth, $elementWidth) {
-    width: $elementWidth - ($breakpointMarginPx / $containerWidth * $elementWidth); 
+// 
+// @TODO: Add docs to set-column-width!
+//
+@mixin set-column-width($containerWidth, $elWidth:50%, $elColumns:1, $totalColumns:2, $gutterWidth: $gutterWidthPx) {
+    width: calculate-column-width($containerWidth, $elWidth, $elColumns, $totalColumns, $gutterWidth);
 }
-
-@mixin calcPercent($property, $containerWidth) {
-    #{$property}: $breakpointMarginPx / $containerWidth * 100%;
+// 
+// @TODO: Add docs to calculate-column-width!
+//
+@function calculate-column-width($containerWidth, $elWidth:50%, $elColumns:1, $totalColumns:2, $gutterWidth:$gutterWidthPx) {
+    // calcuate total margin being used
+    $gutterPercent: $gutterWidth / $containerWidth * 100%;
+    $totalGutterPercent: $gutterPercent * ($totalColumns - 1);
+    // distribute the gutter width between each column
+    $columnGutterPercent: $totalGutterPercent / $totalColumns;
+    // subtract gutter width from column
+    @if $elWidth == 0 {
+        $elWidth: $elColumns / $totalColumns * 100%;
+    }
+    $preFinalWidth: $elWidth - $columnGutterPercent;
+    // add gutter widths to elements accounting for more than 1 column
+    $finalWidth: $preFinalWidth + (($elColumns - 1) * $columnGutterPercent); 
+    
+    @return $finalWidth;
 }
-
-
-
-
-
-
+// 
+// @TODO: Add docs to set-gutter-width!
+//
+@mixin set-gutter-width($containerWidth, $property: margin-left, $gutterWidth:$gutterWidthPx) {
+    #{$property}: ($gutterWidth / $containerWidth) * 100%;
+}
